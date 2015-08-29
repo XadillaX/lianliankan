@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>死月连连看: CMapSearch类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 制作者 Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pri-methods">私有成员</a> &#124;
+<a href="#pri-attribs">私有属性</a>  </div>
+  <div class="headertitle">
+<h1>CMapSearch类参考</h1>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="CMapSearch" -->
+<p>地图搜索类  
+<a href="#_details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/df4/_map_search_8h_source.html">MapSearch.h</a>&gt;</code></p>
+<div class="dynheader">
+CMapSearch合作图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d86/class_c_map_search__coll__graph.png" border="0" usemap="#_c_map_search_coll__map" alt="Collaboration graph"/></div>
+<map name="_c_map_search_coll__map" id="_c_map_search_coll__map">
+<area shape="rect" id="node2" href="../../d9/de3/struct_coor_type.html" title="地图坐标结构体" alt="" coords="23,5,100,35"/><area shape="rect" id="node4" href="../../df/d9c/struct_point_path.html" title="路线结构体" alt="" coords="71,101,148,131"/></map>
+<center><span class="legend">[<a href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../da/de3/class_c_map_search-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#adcf80992b21e3923aad8ee22e0b75832">CMapSearch</a> (int _Map[][MAP_WIDTH])</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">构造函数  <a href="#adcf80992b21e3923aad8ee22e0b75832"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#ac12bf5ee6b8bfbf39fe20e1eaba14f3a">~CMapSearch</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">析构函数  <a href="#ac12bf5ee6b8bfbf39fe20e1eaba14f3a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#a547f6937e7c32d7ad22e03541387f36d">LoadMap</a> (int _Map[][MAP_WIDTH])</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">载入地图 从矩阵中载入地图到对象  <a href="#a547f6937e7c32d7ad22e03541387f36d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#ae027c6cfce9303227efba104b553c4df">Search</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">搜索地图 对整个地图进行搜索每两个相同方块之间的路径  <a href="#ae027c6cfce9303227efba104b553c4df"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#a8ad4b22b950618ab5ec9e1e22eb37f1b">CreateSTLMap</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建map映射 创建一个方块ID的映射，对每个ID创建一条的该ID的方块在地图中的各坐标的链表  <a href="#a8ad4b22b950618ab5ec9e1e22eb37f1b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#a9339490bb8bad8c2a46a964712cdcf3e">Abled</a> (<a class="el" href="../../d9/de3/struct_coor_type.html">CoorType</a> a, <a class="el" href="../../d9/de3/struct_coor_type.html">CoorType</a> b, bool head=false, bool tail=false)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">判断是否有障碍 对于a、b两坐标（在同一直线）进行判断期间是否有方块障碍而导致不能连线  <a href="#a9339490bb8bad8c2a46a964712cdcf3e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9c/struct_point_path.html">PointPath</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#a774c5bb73bdc2eb9267e206a17db29c3">GetPath</a> (int y1, int x1, int y2, int x2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">得到路径 得到两个坐标的连线具体路径  <a href="#a774c5bb73bdc2eb9267e206a17db29c3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#a685452bc270b6bcb7a0ab50f6d814065">GetRandomHint</a> (int &amp;a, int &amp;b)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">得到提示路径 得到一条提示的路径的相应两个方块  <a href="#a685452bc270b6bcb7a0ab50f6d814065"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pri-methods"></a>
+私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9c/struct_point_path.html">PointPath</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#a4b919e01ecd3998c2c159d7c33877972">DoSearch</a> (int y1, int x1, int y2, int x2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">两点寻径  <a href="#a4b919e01ecd3998c2c159d7c33877972"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#aeac66f79f8463a4a221d8206d1ca7a63">Map</a> [MAP_HEIGHT][MAP_WIDTH]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">地图数据矩阵  <a href="#aeac66f79f8463a4a221d8206d1ca7a63"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9c/struct_point_path.html">PointPath</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#a0f176e6e92779f36a1c0a5479ea112e6">dis</a> [MAP_HEIGHT][MAP_WIDTH][MAP_HEIGHT][MAP_WIDTH]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">路径数组  <a href="#a0f176e6e92779f36a1c0a5479ea112e6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/df4/_map_search_8h.html#ab44e1c399a12cd65d6c8c6a2b7e465a4">STLMap</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#a7e9c9668a5d731ffc03acd69ead33f53">grap</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">STL映射.  <a href="#a7e9c9668a5d731ffc03acd69ead33f53"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/de3/struct_coor_type.html">CoorType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#a4a7211859c9b6ff918d568f9aac3711a">dir</a> [4]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">常量坐标增量  <a href="#a4a7211859c9b6ff918d568f9aac3711a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9c/struct_point_path.html">PointPath</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/class_c_map_search.html#aa57a1a0c01ed909e8915c7bb41c51386">Hint</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">提示时用的合法路径  <a href="#aa57a1a0c01ed909e8915c7bb41c51386"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>地图搜索类 </p>
+<p>根据指定地图搜索出各合法路径。 </p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="adcf80992b21e3923aad8ee22e0b75832"></a><!-- doxytag: member="CMapSearch::CMapSearch" ref="adcf80992b21e3923aad8ee22e0b75832" args="(int _Map[][MAP_WIDTH])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMapSearch::CMapSearch </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>_Map</em>[][MAP_WIDTH]</td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>构造函数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>_Map[][Map_Width]</em>&nbsp;</td><td>地图矩阵 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac12bf5ee6b8bfbf39fe20e1eaba14f3a"></a><!-- doxytag: member="CMapSearch::~CMapSearch" ref="ac12bf5ee6b8bfbf39fe20e1eaba14f3a" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMapSearch::~CMapSearch </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a9339490bb8bad8c2a46a964712cdcf3e"></a><!-- doxytag: member="CMapSearch::Abled" ref="a9339490bb8bad8c2a46a964712cdcf3e" args="(CoorType a, CoorType b, bool head=false, bool tail=false)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMapSearch::Abled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/de3/struct_coor_type.html">CoorType</a>&nbsp;</td>
+          <td class="paramname"> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/de3/struct_coor_type.html">CoorType</a>&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>head</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>tail</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>判断是否有障碍 对于a、b两坐标（在同一直线）进行判断期间是否有方块障碍而导致不能连线 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>a</em>&nbsp;</td><td>坐标a（头坐标） </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>坐标b（尾坐标） </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>head</em>&nbsp;</td><td>若包括头坐标则为true，否则为false </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>tail</em>&nbsp;</td><td>若包括尾坐标则为true，否则为false </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>若有障碍则返回false，否则为true </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8ad4b22b950618ab5ec9e1e22eb37f1b"></a><!-- doxytag: member="CMapSearch::CreateSTLMap" ref="a8ad4b22b950618ab5ec9e1e22eb37f1b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMapSearch::CreateSTLMap </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>创建map映射 创建一个方块ID的映射，对每个ID创建一条的该ID的方块在地图中的各坐标的链表 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4b919e01ecd3998c2c159d7c33877972"></a><!-- doxytag: member="CMapSearch::DoSearch" ref="a4b919e01ecd3998c2c159d7c33877972" args="(int y1, int x1, int y2, int x2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/struct_point_path.html">PointPath</a> CMapSearch::DoSearch </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>两点寻径 </p>
+<p>对(x1, y1)和(x2, y2)进行寻径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x1</em>&nbsp;</td><td>第一个坐标的x轴 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y1</em>&nbsp;</td><td>第一个坐标的y轴 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x2</em>&nbsp;</td><td>第二个坐标的x轴 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y2</em>&nbsp;</td><td>第二个坐标的y轴 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回一个路线结构体的值，若不存在路径，则结构体的bExist为假 </dd></dl>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../db/d29/class_c_map_search.html#a9339490bb8bad8c2a46a964712cdcf3e" title="判断是否有障碍 对于a、b两坐标（在同一直线）进行判断期间是否有方块障碍而导致不能连线">Abled</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a774c5bb73bdc2eb9267e206a17db29c3"></a><!-- doxytag: member="CMapSearch::GetPath" ref="a774c5bb73bdc2eb9267e206a17db29c3" args="(int y1, int x1, int y2, int x2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/struct_point_path.html">PointPath</a> CMapSearch::GetPath </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>得到路径 得到两个坐标的连线具体路径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>y1</em>&nbsp;</td><td>第一个坐标的y轴 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x1</em>&nbsp;</td><td>第一个坐标的x轴 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y2</em>&nbsp;</td><td>第二个坐标的y轴 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x2</em>&nbsp;</td><td>第二个坐标的x轴 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回一个路线结构体，表示该两个坐标直接的路线 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a685452bc270b6bcb7a0ab50f6d814065"></a><!-- doxytag: member="CMapSearch::GetRandomHint" ref="a685452bc270b6bcb7a0ab50f6d814065" args="(int &amp;a, int &amp;b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMapSearch::GetRandomHint </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&nbsp;</td>
+          <td class="paramname"> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&nbsp;</td>
+          <td class="paramname"> <em>b</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>得到提示路径 得到一条提示的路径的相应两个方块 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>&amp;a</em>&nbsp;</td><td>接受第一个方块ID的变量 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>&amp;b</em>&nbsp;</td><td>接受第二个方块ID的变量 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a547f6937e7c32d7ad22e03541387f36d"></a><!-- doxytag: member="CMapSearch::LoadMap" ref="a547f6937e7c32d7ad22e03541387f36d" args="(int _Map[][MAP_WIDTH])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMapSearch::LoadMap </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>_Map</em>[][MAP_WIDTH]</td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>载入地图 从矩阵中载入地图到对象 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>_Map[][Map_Width]</em>&nbsp;</td><td>地图矩阵 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae027c6cfce9303227efba104b553c4df"></a><!-- doxytag: member="CMapSearch::Search" ref="ae027c6cfce9303227efba104b553c4df" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CMapSearch::Search </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>搜索地图 对整个地图进行搜索每两个相同方块之间的路径 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果存在至少一条路径则返回真，否则为假，用于是否重列 </dd></dl>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../db/d29/class_c_map_search.html#a8ad4b22b950618ab5ec9e1e22eb37f1b" title="创建map映射 创建一个方块ID的映射，对每个ID创建一条的该ID的方块在地图中的各坐标的链表">CreateSTLMap</a> </dd>
+<dd>
+<a class="el" href="../../db/d29/class_c_map_search.html#a4b919e01ecd3998c2c159d7c33877972" title="两点寻径">DoSearch</a> </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a4a7211859c9b6ff918d568f9aac3711a"></a><!-- doxytag: member="CMapSearch::dir" ref="a4a7211859c9b6ff918d568f9aac3711a" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/de3/struct_coor_type.html">CoorType</a> <a class="el" href="../../db/d29/class_c_map_search.html#a4a7211859c9b6ff918d568f9aac3711a">CMapSearch::dir</a>[4]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>常量坐标增量 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0f176e6e92779f36a1c0a5479ea112e6"></a><!-- doxytag: member="CMapSearch::dis" ref="a0f176e6e92779f36a1c0a5479ea112e6" args="[MAP_HEIGHT][MAP_WIDTH][MAP_HEIGHT][MAP_WIDTH]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/struct_point_path.html">PointPath</a> <a class="el" href="../../db/d29/class_c_map_search.html#a0f176e6e92779f36a1c0a5479ea112e6">CMapSearch::dis</a>[MAP_HEIGHT][MAP_WIDTH][MAP_HEIGHT][MAP_WIDTH]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>路径数组 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7e9c9668a5d731ffc03acd69ead33f53"></a><!-- doxytag: member="CMapSearch::grap" ref="a7e9c9668a5d731ffc03acd69ead33f53" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/df4/_map_search_8h.html#ab44e1c399a12cd65d6c8c6a2b7e465a4">STLMap</a> <a class="el" href="../../db/d29/class_c_map_search.html#a7e9c9668a5d731ffc03acd69ead33f53">CMapSearch::grap</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>STL映射. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa57a1a0c01ed909e8915c7bb41c51386"></a><!-- doxytag: member="CMapSearch::Hint" ref="aa57a1a0c01ed909e8915c7bb41c51386" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9c/struct_point_path.html">PointPath</a> <a class="el" href="../../db/d29/class_c_map_search.html#aa57a1a0c01ed909e8915c7bb41c51386">CMapSearch::Hint</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>提示时用的合法路径 </p>
+
+</div>
+</div>
+<a class="anchor" id="aeac66f79f8463a4a221d8206d1ca7a63"></a><!-- doxytag: member="CMapSearch::Map" ref="aeac66f79f8463a4a221d8206d1ca7a63" args="[MAP_HEIGHT][MAP_WIDTH]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../db/d29/class_c_map_search.html#aeac66f79f8463a4a221d8206d1ca7a63">CMapSearch::Map</a>[MAP_HEIGHT][MAP_WIDTH]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>地图数据矩阵 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>F:/VC2008 Proj/LinkMe/<a class="el" href="../../db/df4/_map_search_8h_source.html">MapSearch.h</a></li>
+<li>F:/VC2008 Proj/LinkMe/<a class="el" href="../../dc/d6e/_map_search_8cpp.html">MapSearch.cpp</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Generated at Fri Oct 8 2010 01:16:15 for 死月连连看 by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

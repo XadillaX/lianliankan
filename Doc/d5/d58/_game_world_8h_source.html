@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>死月连连看: F:/VC2008 Proj/LinkMe/GameWorld.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 制作者 Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>F:/VC2008 Proj/LinkMe/GameWorld.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="../../d5/d58/_game_world_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="preprocessor">#pragma once</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#ifndef GAMEWORLD</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#define GAMEWORLD</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &lt;hge.h&gt;</span>
+<a name="l00022"></a>00022 <span class="preprocessor">#include &lt;hgegui.h&gt;</span>
+<a name="l00023"></a>00023 <span class="preprocessor">#include &lt;hgefont.h&gt;</span>
+<a name="l00024"></a>00024 <span class="preprocessor">#include &quot;<a class="code" href="../../df/df6/_tiny_button_8h.html" title="普通GUI按钮类文件">TinyButton.h</a>&quot;</span>
+<a name="l00025"></a>00025 <span class="preprocessor">#include &quot;<a class="code" href="../../d4/dad/_elem_button_8h.html" title="方块GUI类文件">ElemButton.h</a>&quot;</span>
+<a name="l00026"></a>00026 <span class="preprocessor">#include &lt;hgeanim.h&gt;</span>
+<a name="l00027"></a>00027 <span class="preprocessor">#include &quot;<a class="code" href="../../db/df4/_map_search_8h.html" title="地图搜索逻辑文件">MapSearch.h</a>&quot;</span>
+<a name="l00028"></a>00028 <span class="preprocessor">#include &quot;list&quot;</span>
+<a name="l00029"></a>00029 
+<a name="l00030"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a49f2b13d3a72dc8aa9a8e370da17a4a4">00030</a> <span class="preprocessor">#define IMAGE_ZIP               &quot;Texture.X2Pak&quot;            ///&lt; 纹理资源包文件名</span>
+<a name="l00031"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a0c4ff73871aae05a3fdce3b0c0a4e448">00031</a> <span class="preprocessor"></span><span class="preprocessor">#define MUSIC_ZIP               &quot;Music.X2Pak&quot;              ///&lt; 音乐资源包文件名</span>
+<a name="l00032"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a18d9b8a42eb4ab204400d5230ca3b30b">00032</a> <span class="preprocessor"></span><span class="preprocessor">#define MAP_ZIP                 &quot;Maps.X2Pak&quot;               ///&lt; 地图种子资源包文件名</span>
+<a name="l00033"></a><a class="code" href="../../d5/d58/_game_world_8h.html#ac397cb444b98c5a483ba361b1fd840a3">00033</a> <span class="preprocessor"></span><span class="preprocessor">#define IMAGE_ZIP_PASSWORD      &quot;X2Studio&quot;                 ///&lt; 纹理资源包密码</span>
+<a name="l00034"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a4dededc6ac6d888f9b93416d59c7955c">00034</a> <span class="preprocessor"></span><span class="preprocessor">#define MUSIC_ZIP_PASSWORD      &quot;X2Studio&quot;                 ///&lt; 音乐资源包密码</span>
+<a name="l00035"></a><a class="code" href="../../d5/d58/_game_world_8h.html#ab7c96e7979b727c4a05e507baf2e0a5e">00035</a> <span class="preprocessor"></span><span class="preprocessor">#define MAP_ZIP_PASSWORD        &quot;X2Studio&quot;                 ///&lt; 地图种子资源包密码</span>
+<a name="l00036"></a><a class="code" href="../../d5/d58/_game_world_8h.html#afda243535734924a9a3a1a2de4b22948">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX_ELEM_TEXTURE        10                         ///&lt; 方块资源文件数</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span>
+<a name="l00038"></a><a class="code" href="../../d5/d58/_game_world_8h.html#af7fb0bcaefa6890453bbc1aa2860cc6e">00038</a> <span class="preprocessor">#define ID_START_BTN            1                          ///&lt; 开始按钮ID</span>
+<a name="l00039"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a3550d68b09b972674a6342166f27b4b5">00039</a> <span class="preprocessor"></span><span class="preprocessor">#define ID_HINT_BTN             2                          ///&lt; 提示按钮ID</span>
+<a name="l00040"></a><a class="code" href="../../d5/d58/_game_world_8h.html#ae5c36d2788afcee9f79831edf4480f4d">00040</a> <span class="preprocessor"></span><span class="preprocessor">#define ID_RESORT_BTN           3                          ///&lt; 重列按钮ID</span>
+<a name="l00041"></a>00041 <span class="preprocessor"></span>
+<a name="l00042"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a33f3f457e3255566754445607d05b9ec">00042</a> <span class="preprocessor">#define MAP_SEED_NUM            16                         ///&lt; 地图种子数</span>
+<a name="l00043"></a>00043 <span class="preprocessor"></span>
+<a name="l00044"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a529d5ebb449edf31d9835d13f4fb9f89">00044</a> <span class="preprocessor">#define MAP_HEIGHT              10                         ///&lt; 地图高度</span>
+<a name="l00045"></a><a class="code" href="../../d5/d58/_game_world_8h.html#aa037a6d6a4f04d51c7ec1c9ee9054e76">00045</a> <span class="preprocessor"></span><span class="preprocessor">#define MAP_WIDTH               18                         ///&lt; 地图宽度</span>
+<a name="l00046"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a67eae982b49c1b4d68fd5f0708f83642">00046</a> <span class="preprocessor"></span><span class="preprocessor">#define MAX_TIME_BAR            330                        ///&lt; 最大时间条</span>
+<a name="l00047"></a>00047 <span class="preprocessor"></span>
+<a name="l00048"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a5320d4457a472d8888ec1905bc0e0a1c">00048</a> <span class="preprocessor">#define MAX_TIME                45.0f                      ///&lt; 最长寻找时间</span>
+<a name="l00049"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a486bc7f0b9930269f50746606e1c7145">00049</a> <span class="preprocessor"></span><span class="preprocessor">#define ID_ELEM_GUI_START       50                         ///&lt; 方块GUI的起始ID</span>
+<a name="l00050"></a>00050 <span class="preprocessor"></span>
+<a name="l00056"></a><a class="code" href="../../dd/da9/struct_coor.html">00056</a> <span class="keyword">struct </span><a class="code" href="../../dd/da9/struct_coor.html" title="客户端屏幕坐标类型">Coor</a> {
+<a name="l00057"></a><a class="code" href="../../dd/da9/struct_coor.html#a0864f144a5bbfacf8f5c9033f04aea99">00057</a>     <span class="keywordtype">float</span> <a class="code" href="../../dd/da9/struct_coor.html#a0864f144a5bbfacf8f5c9033f04aea99" title="客户区域的x轴坐标值">x</a>;                                                
+<a name="l00058"></a><a class="code" href="../../dd/da9/struct_coor.html#a750d425bd47f43b44656f4f19f827f44">00058</a>     <span class="keywordtype">float</span> <a class="code" href="../../dd/da9/struct_coor.html#a750d425bd47f43b44656f4f19f827f44" title="客户区域的y轴坐标值">y</a>;                                                
+<a name="l00059"></a>00059 };
+<a name="l00060"></a>00060 
+<a name="l00066"></a><a class="code" href="../../d9/d50/struct_map_seed_type.html">00066</a> <span class="keyword">struct </span><a class="code" href="../../d9/d50/struct_map_seed_type.html" title="地图种子类型">MapSeedType</a> {
+<a name="l00067"></a><a class="code" href="../../d9/d50/struct_map_seed_type.html#afb670f447bb51aa1a7e883189130fe36">00067</a>     <span class="keywordtype">int</span> <a class="code" href="../../d9/d50/struct_map_seed_type.html#afb670f447bb51aa1a7e883189130fe36" title="种子编号">Num</a>;                                               
+<a name="l00068"></a><a class="code" href="../../d9/d50/struct_map_seed_type.html#aee83f6e98991107f4b63e70ac0c08980">00068</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d9/d50/struct_map_seed_type.html#aee83f6e98991107f4b63e70ac0c08980" title="地图种子矩阵">Seed</a>[MAP_HEIGHT][MAP_WIDTH];                      
+<a name="l00069"></a>00069 };
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <span class="preprocessor">#ifndef MAPTYPE</span>
+<a name="l00072"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a860ccaf00c89a75d07aa16d576f1b8a3">00072</a> <span class="preprocessor"></span><span class="preprocessor">#define MAPTYPE</span>
+<a name="l00073"></a>00073 <span class="preprocessor"></span>
+<a name="l00079"></a><a class="code" href="../../dc/d9e/struct_map_type.html">00079</a> <span class="keyword">struct </span><a class="code" href="../../dc/d9e/struct_map_type.html" title="地图类型">MapType</a> {
+<a name="l00080"></a><a class="code" href="../../dc/d9e/struct_map_type.html#af38672b29bd74562408ef17ed08ff037">00080</a>     <span class="keywordtype">int</span> <a class="code" href="../../dc/d9e/struct_map_type.html#af38672b29bd74562408ef17ed08ff037" title="地图剩下的方块">nLeft</a>;                                              
+<a name="l00081"></a><a class="code" href="../../dc/d9e/struct_map_type.html#a624e187bf2a077227af24f5e798e0bd8">00081</a>     <span class="keywordtype">int</span> <a class="code" href="../../dc/d9e/struct_map_type.html#a624e187bf2a077227af24f5e798e0bd8" title="地图二维数组">Map</a>[MAP_HEIGHT][MAP_WIDTH];                         
+<a name="l00082"></a>00082 };
+<a name="l00083"></a>00083 <span class="preprocessor">#endif</span>
+<a name="l00084"></a>00084 <span class="preprocessor"></span>
+<a name="l00091"></a><a class="code" href="../../d2/dd5/struct_map_coor_type.html">00091</a> <span class="keyword">struct </span><a class="code" href="../../d2/dd5/struct_map_coor_type.html" title="地图类型">MapCoorType</a> {
+<a name="l00092"></a><a class="code" href="../../d2/dd5/struct_map_coor_type.html#a3846ab0ce95a577e955b58081ed8e272">00092</a>     <span class="keywordtype">int</span> <a class="code" href="../../d2/dd5/struct_map_coor_type.html#a3846ab0ce95a577e955b58081ed8e272" title="x轴坐标">x</a>;                                                  
+<a name="l00093"></a><a class="code" href="../../d2/dd5/struct_map_coor_type.html#a226d6560cb15956d66442158f02c1a78">00093</a>     <span class="keywordtype">int</span> <a class="code" href="../../d2/dd5/struct_map_coor_type.html#a226d6560cb15956d66442158f02c1a78" title="y轴坐标">y</a>;                                                  
+<a name="l00094"></a>00094 
+<a name="l00100"></a><a class="code" href="../../d2/dd5/struct_map_coor_type.html#acedb5492040149708ea1150c4cada5f9">00100</a>     <span class="keywordtype">void</span> <a class="code" href="../../d2/dd5/struct_map_coor_type.html#acedb5492040149708ea1150c4cada5f9">ToCoor</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)
+<a name="l00101"></a>00101     {
+<a name="l00102"></a>00102         <span class="keywordtype">id</span> -= ID_ELEM_GUI_START;
+<a name="l00103"></a>00103         <a class="code" href="../../d2/dd5/struct_map_coor_type.html#a226d6560cb15956d66442158f02c1a78" title="y轴坐标">y</a> = <span class="keywordtype">id</span> / MAP_WIDTH;
+<a name="l00104"></a>00104         <a class="code" href="../../d2/dd5/struct_map_coor_type.html#a3846ab0ce95a577e955b58081ed8e272" title="x轴坐标">x</a> = <span class="keywordtype">id</span> % MAP_WIDTH;
+<a name="l00105"></a>00105     }
+<a name="l00106"></a>00106 };
+<a name="l00107"></a>00107 
+<a name="l00113"></a><a class="code" href="../../d4/dbd/struct_boom_ani.html">00113</a> <span class="keyword">struct </span><a class="code" href="../../d4/dbd/struct_boom_ani.html" title="动画精灵类型">BoomAni</a> {
+<a name="l00114"></a><a class="code" href="../../d4/dbd/struct_boom_ani.html#a03881c45fd132e147c417db999cac544">00114</a>     <span class="keywordtype">float</span> <a class="code" href="../../d4/dbd/struct_boom_ani.html#a03881c45fd132e147c417db999cac544" title="动画精灵的寿命">timer</a>;                                            
+<a name="l00115"></a><a class="code" href="../../d4/dbd/struct_boom_ani.html#a0ba7726af04683470752c2ca12f08472">00115</a>         <span class="keywordtype">float</span> <a class="code" href="../../d4/dbd/struct_boom_ani.html#a0ba7726af04683470752c2ca12f08472" title="计时器">delay</a>;                                            
+<a name="l00116"></a><a class="code" href="../../d4/dbd/struct_boom_ani.html#ac5346d07613c9675ba7574c3d8da83d4">00116</a>     hgeAnimation *<a class="code" href="../../d4/dbd/struct_boom_ani.html#ac5346d07613c9675ba7574c3d8da83d4" title="动画纹理">ani</a>;                                      
+<a name="l00117"></a><a class="code" href="../../d4/dbd/struct_boom_ani.html#add2e70d2cf623eccda93fbbd3f5cd54b">00117</a>     <span class="keywordtype">float</span> <a class="code" href="../../d4/dbd/struct_boom_ani.html#add2e70d2cf623eccda93fbbd3f5cd54b" title="动画位置x坐标">x</a>;                                                
+<a name="l00118"></a><a class="code" href="../../d4/dbd/struct_boom_ani.html#a88977a4c042996c41299ad523943295e">00118</a>         <span class="keywordtype">float</span> <a class="code" href="../../d4/dbd/struct_boom_ani.html#a88977a4c042996c41299ad523943295e" title="动画位置y坐标">y</a>;                                                
+<a name="l00119"></a>00119 
+<a name="l00123"></a><a class="code" href="../../d4/dbd/struct_boom_ani.html#a8efe967583fba768870da79e6d30ccea">00123</a>     <a class="code" href="../../d4/dbd/struct_boom_ani.html#a8efe967583fba768870da79e6d30ccea">BoomAni</a>(hgeAnimation a)
+<a name="l00124"></a>00124     {
+<a name="l00125"></a>00125         <a class="code" href="../../d4/dbd/struct_boom_ani.html#ac5346d07613c9675ba7574c3d8da83d4" title="动画纹理">ani</a> = <span class="keyword">new</span> hgeAnimation(a);
+<a name="l00126"></a>00126         <a class="code" href="../../d4/dbd/struct_boom_ani.html#a03881c45fd132e147c417db999cac544" title="动画精灵的寿命">timer</a> = 0;
+<a name="l00127"></a>00127         <a class="code" href="../../d4/dbd/struct_boom_ani.html#a0ba7726af04683470752c2ca12f08472" title="计时器">delay</a> = 1.0f;
+<a name="l00128"></a>00128     }
+<a name="l00129"></a>00129 };
+<a name="l00130"></a>00130 
+<a name="l00131"></a><a class="code" href="../../d5/d58/_game_world_8h.html#a97ba5369257e916280e369f13632af08">00131</a> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="../../d5/d58/_game_world_8h.html#a97ba5369257e916280e369f13632af08" title="方块资源文件名前缀">szElemFileNamePrefix</a>[]       = <span class="stringliteral">&quot;Elem&quot;</span>;           
+<a name="l00132"></a><a class="code" href="../../d5/d58/_game_world_8h.html#aee6578544b75609d3926ab76c78b3505">00132</a> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="../../d5/d58/_game_world_8h.html#aee6578544b75609d3926ab76c78b3505" title="方块资源文件名后缀">szElemFileNameSuffix</a>[]       = <span class="stringliteral">&quot;.png&quot;</span>;           
+<a name="l00133"></a><a class="code" href="../../d5/d58/_game_world_8h.html#adde28fc6e843f37f94fcc68bf21baba8">00133</a> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="../../d5/d58/_game_world_8h.html#adde28fc6e843f37f94fcc68bf21baba8" title="方块资源文件名前缀">szMapSeedFileNamePrefix</a>[]    = <span class="stringliteral">&quot;Map&quot;</span>;            
+<a name="l00134"></a><a class="code" href="../../d5/d58/_game_world_8h.html#af0de938fcbfb57528e23dea20935d4e2">00134</a> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="../../d5/d58/_game_world_8h.html#af0de938fcbfb57528e23dea20935d4e2" title="方块资源文件名后缀">szMapSeedFileNameSuffix</a>[]    = <span class="stringliteral">&quot;.txt&quot;</span>;           
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 <span class="keywordtype">bool</span> <a class="code" href="../../d5/d58/_game_world_8h.html#a9e43a5916a40070823faa556d816f795">LogicFunc</a>();
+<a name="l00137"></a>00137 <span class="keywordtype">bool</span> <a class="code" href="../../d5/d58/_game_world_8h.html#a42f9fb3d6d74574e79491e7cc3b493f6">RenderFunc</a>();
+<a name="l00138"></a>00138 
+<a name="l00139"></a>00139 <span class="keyword">class </span><a class="code" href="../../db/d29/class_c_map_search.html" title="地图搜索类">CMapSearch</a>;
+<a name="l00140"></a>00140 <span class="keyword">struct </span><a class="code" href="../../df/d9c/struct_point_path.html" title="路线结构体">PointPath</a>;
+<a name="l00141"></a>00141 
+<a name="l00147"></a><a class="code" href="../../d4/dad/class_c_game_world.html">00147</a> <span class="keyword">class </span><a class="code" href="../../d4/dad/class_c_game_world.html" title="游戏类">CGameWorld</a>
+<a name="l00148"></a>00148 {
+<a name="l00149"></a>00149 <span class="keyword">private</span>:
+<a name="l00150"></a><a class="code" href="../../d4/dad/class_c_game_world.html#ad2d77680015ceabf636b1ebc33089bbf">00150</a>     hgeQuad <a class="code" href="../../d4/dad/class_c_game_world.html#ad2d77680015ceabf636b1ebc33089bbf" title="背景四边形图元">Background</a>;                                                                              
+<a name="l00151"></a>00151 
+<a name="l00152"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a3a240b2220c71300853c984eedac70e4">00152</a>     HTEXTURE <a class="code" href="../../d4/dad/class_c_game_world.html#a3a240b2220c71300853c984eedac70e4" title="鼠标纹理">m_CursorTexture</a>;                                                                        
+<a name="l00153"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a71cebce090f8a6081ccf3badf6c4092a">00153</a>         HTEXTURE <a class="code" href="../../d4/dad/class_c_game_world.html#a71cebce090f8a6081ccf3badf6c4092a" title="开始按钮纹理">StartBtnTexture</a>;                                                                        
+<a name="l00154"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a38849696ab38a415f547f454fdf1c711">00154</a>         HTEXTURE <a class="code" href="../../d4/dad/class_c_game_world.html#a38849696ab38a415f547f454fdf1c711" title="方块纹理数组">m_ElemTexture</a>[MAX_ELEM_TEXTURE];                                                        
+<a name="l00155"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a38e446346b68442152c15641ae39bd98">00155</a>     HTEXTURE <a class="code" href="../../d4/dad/class_c_game_world.html#a38e446346b68442152c15641ae39bd98" title="方块选中效果纹理">m_ElemSelTexture</a>;                                                                       
+<a name="l00156"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a8781dbfe5d7fe35418e457a3f1d49fb8">00156</a>     HTEXTURE <a class="code" href="../../d4/dad/class_c_game_world.html#a8781dbfe5d7fe35418e457a3f1d49fb8" title="爆炸动画纹理">m_BoomTexture</a>;                                                                          
+<a name="l00157"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a07e579bffdbf07a2c8cca632f9b2d999">00157</a>     HTEXTURE <a class="code" href="../../d4/dad/class_c_game_world.html#a07e579bffdbf07a2c8cca632f9b2d999" title="闪电动画纹理数组">m_ElecTexture</a>[6];                                                                       
+<a name="l00158"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a1ba5be44ca29a7ceb4297d1462b00ebf">00158</a>         HTEXTURE <a class="code" href="../../d4/dad/class_c_game_world.html#a1ba5be44ca29a7ceb4297d1462b00ebf" title="时间轴纹理">m_TimeBarTexture</a>;                                                                       
+<a name="l00159"></a><a class="code" href="../../d4/dad/class_c_game_world.html#ab91a2ad2ce5aac20bc92e07e9dc39f14">00159</a>         HTEXTURE <a class="code" href="../../d4/dad/class_c_game_world.html#ab91a2ad2ce5aac20bc92e07e9dc39f14" title="提示道具纹理">m_HintTexture</a>;                                                                          
+<a name="l00160"></a><a class="code" href="../../d4/dad/class_c_game_world.html#ae9cafcff3e0e35f8b6f698d2bc021f85">00160</a>         HTEXTURE <a class="code" href="../../d4/dad/class_c_game_world.html#ae9cafcff3e0e35f8b6f698d2bc021f85" title="重排道具纹理">m_ResortTexture</a>;                                                                        
+<a name="l00161"></a>00161         
+<a name="l00162"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a9476155b26caa5c9fa19bae3fb409a54">00162</a>     hgeGUI *<a class="code" href="../../d4/dad/class_c_game_world.html#a9476155b26caa5c9fa19bae3fb409a54" title="界面GUI变量">gui</a>;                                                                                     
+<a name="l00163"></a>00163 
+<a name="l00164"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a2d2f9cd704537df313abaed58069f386">00164</a>     hgeSprite *<a class="code" href="../../d4/dad/class_c_game_world.html#a2d2f9cd704537df313abaed58069f386" title="HGE鼠标精灵.">m_pCursor</a>;                                                                            
+<a name="l00165"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a3648559ecd38ffc58ca7864dfda78dad">00165</a>         hgeSprite *<a class="code" href="../../d4/dad/class_c_game_world.html#a3648559ecd38ffc58ca7864dfda78dad" title="HGE方块精灵数组.">m_pElement</a>[<a class="code" href="../../d5/d58/_game_world_8h.html#afda243535734924a9a3a1a2de4b22948" title="方块资源文件数">MAX_ELEM_TEXTURE</a> * 4];                                                     
+<a name="l00166"></a><a class="code" href="../../d4/dad/class_c_game_world.html#ae869931782d9c189daad5bec2c979916">00166</a>         hgeSprite *<a class="code" href="../../d4/dad/class_c_game_world.html#ae869931782d9c189daad5bec2c979916" title="HGE选中效果精灵.">m_pElemSel</a>;                                                                           
+<a name="l00167"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a263ec19f9e9aba86e9a4cbdc3e4a1384">00167</a>         hgeSprite *<a class="code" href="../../d4/dad/class_c_game_world.html#a263ec19f9e9aba86e9a4cbdc3e4a1384" title="HGE时间轴精灵.">m_pTimeBar</a>;                                                                           
+<a name="l00168"></a>00168         
+<a name="l00169"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a684b5661c8e49a7c2da4d7626ba27fdd">00169</a>     HEFFECT <a class="code" href="../../d4/dad/class_c_game_world.html#a684b5661c8e49a7c2da4d7626ba27fdd" title="背景音乐">BGM</a>;                                                                                     
+<a name="l00170"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a040b5c8dc37ee957aa52e8acca696309">00170</a>         HEFFECT <a class="code" href="../../d4/dad/class_c_game_world.html#a040b5c8dc37ee957aa52e8acca696309" title="开始按钮SE">StartSE</a>;                                                                                 
+<a name="l00171"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a3abb542b6d95482e5e059859216fb0fe">00171</a>         HEFFECT <a class="code" href="../../d4/dad/class_c_game_world.html#a3abb542b6d95482e5e059859216fb0fe" title="选中效果SE">ElemSelSE</a>;                                                                               
+<a name="l00172"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a3086d3f8e9ff029fd17a9774ad15766e">00172</a>         HEFFECT <a class="code" href="../../d4/dad/class_c_game_world.html#a3086d3f8e9ff029fd17a9774ad15766e" title="闪电SE">ElecSE</a>;                                                                                  
+<a name="l00173"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a901d748df822d0d92bd9f4066c84fb5f">00173</a>         HEFFECT <a class="code" href="../../d4/dad/class_c_game_world.html#a901d748df822d0d92bd9f4066c84fb5f" title="游戏结束SE">EndSE</a>;                                                                                   
+<a name="l00174"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a5e7f22e25adf734b86809e643a11bb7d">00174</a>         HEFFECT <a class="code" href="../../d4/dad/class_c_game_world.html#a5e7f22e25adf734b86809e643a11bb7d" title="方块爆炸SE">ItemBoomSE</a>;                                                                              
+<a name="l00175"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a71ae5f893994cfd835aec36e43aa4c37">00175</a>         HEFFECT <a class="code" href="../../d4/dad/class_c_game_world.html#a71ae5f893994cfd835aec36e43aa4c37" title="时间快到SE">LessTimeSE</a>;                                                                              
+<a name="l00176"></a><a class="code" href="../../d4/dad/class_c_game_world.html#af1dbcf79f9d1e8d2df26d83f6c47da87">00176</a>         HEFFECT <a class="code" href="../../d4/dad/class_c_game_world.html#af1dbcf79f9d1e8d2df26d83f6c47da87" title="提示道具SE">HintSE</a>;                                                                                  
+<a name="l00177"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a3d80121860a2b6a9dc0afc68caa03333">00177</a>         HEFFECT <a class="code" href="../../d4/dad/class_c_game_world.html#a3d80121860a2b6a9dc0afc68caa03333" title="重拍道具SE">ResortSE</a>;                                                                                
+<a name="l00178"></a>00178         
+<a name="l00179"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a1ab8f43d2457a9b7257c89e2c915f3eb">00179</a>     <a class="code" href="../../d9/d50/struct_map_seed_type.html" title="地图种子类型">MapSeedType</a> <a class="code" href="../../d4/dad/class_c_game_world.html#a1ab8f43d2457a9b7257c89e2c915f3eb" title="地图种子">m_MapSeed</a>[MAP_SEED_NUM];                                                             
+<a name="l00180"></a>00180         
+<a name="l00181"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a869cbd550dfe626d8442ce91d6bed8e2">00181</a>     <span class="keywordtype">int</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a869cbd550dfe626d8442ce91d6bed8e2" title="最后按下的GUI的ID">m_nLastGUIID</a>;                                                                                
+<a name="l00182"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a7c3817699f8222739d97b2dd6e822e4f">00182</a>         <span class="keywordtype">int</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a7c3817699f8222739d97b2dd6e822e4f" title="当前地图的种子ID">m_nSeedID</a>;                                                                                   
+<a name="l00183"></a><a class="code" href="../../d4/dad/class_c_game_world.html#ab2548440a683f4a8c763d502d8afd53c">00183</a>     HCHANNEL <a class="code" href="../../d4/dad/class_c_game_world.html#ab2548440a683f4a8c763d502d8afd53c" title="HGE的BGM频道.">BGMChannel</a>;                                                                             
+<a name="l00184"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a4ac08d06f0bf5098f491f85b293623d0">00184</a>     <a class="code" href="../../dc/d9e/struct_map_type.html" title="地图类型">MapType</a> <a class="code" href="../../d4/dad/class_c_game_world.html#a4ac08d06f0bf5098f491f85b293623d0" title="地图">m_Map</a>;                                                                                   
+<a name="l00185"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a5722c4e9a007a04e775e45c54cd3bb73">00185</a>     hgeFont *<a class="code" href="../../d4/dad/class_c_game_world.html#a5722c4e9a007a04e775e45c54cd3bb73" title="HGE字体.">fnt</a>;                                                                                    
+<a name="l00186"></a>00186         
+<a name="l00187"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a913bb7eb4c44f4d37dbbb250acbcc65f">00187</a>     hgeAnimation *<a class="code" href="../../d4/dad/class_c_game_world.html#a913bb7eb4c44f4d37dbbb250acbcc65f" title="爆炸动画精灵">m_BoomAni</a>;                                                                         
+<a name="l00188"></a><a class="code" href="../../d4/dad/class_c_game_world.html#add87006b749e2b2d30af045712fd7f5b">00188</a>         hgeAnimation *<a class="code" href="../../d4/dad/class_c_game_world.html#add87006b749e2b2d30af045712fd7f5b" title="闪电动画精灵">m_ThunderAni</a>[6];                                                                   
+<a name="l00189"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a404b7f9fec7587f8deed5b3d465b8174">00189</a>     <a class="code" href="../../de/dc5/class_c_elem_button.html" title="方块GUI类">CElemButton</a> *<a class="code" href="../../d4/dad/class_c_game_world.html#a404b7f9fec7587f8deed5b3d465b8174" title="方块GUI数组">m_pElemButtonArr</a>[300];                                                              
+<a name="l00190"></a><a class="code" href="../../d4/dad/class_c_game_world.html#acae38f0edd84d5d09cda11631aacabb1">00190</a>     <a class="code" href="../../db/d29/class_c_map_search.html" title="地图搜索类">CMapSearch</a> *<a class="code" href="../../d4/dad/class_c_game_world.html#acae38f0edd84d5d09cda11631aacabb1" title="地图搜索类的实例">m_pMapSearch</a>;                                                                        
+<a name="l00191"></a><a class="code" href="../../d4/dad/class_c_game_world.html#aa45953c5278bf103385c722d7b832c25">00191</a>         <span class="keywordtype">float</span> <a class="code" href="../../d4/dad/class_c_game_world.html#aa45953c5278bf103385c722d7b832c25" title="这一次的计时">m_thisTime</a>;                                                                                
+<a name="l00192"></a><a class="code" href="../../d4/dad/class_c_game_world.html#ae150f6345c87c332a62aadc55e6d8e4a">00192</a>     list&lt;BoomAni&gt; <a class="code" href="../../d4/dad/class_c_game_world.html#ae150f6345c87c332a62aadc55e6d8e4a" title="当前需要显示的动画链表">BA</a>;                                                                                
+<a name="l00193"></a>00193         
+<a name="l00194"></a>00194 <span class="keyword">private</span>:
+<a name="l00199"></a>00199     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a957b831bfef4b833f0802db3d4bdd514" title="闪电动画渲染 对链表中的闪电动画进行渲染，过时的动画从链表中删除">BoomLineRender</a>();
+<a name="l00200"></a>00200         
+<a name="l00201"></a>00201 <span class="keyword">public</span>:
+<a name="l00202"></a><a class="code" href="../../d4/dad/class_c_game_world.html#aa92daf802897db467ac78aadd4857ca8">00202</a>     HGE *<a class="code" href="../../d4/dad/class_c_game_world.html#aa92daf802897db467ac78aadd4857ca8" title="*核心 ―― HGE引擎">Engine</a>;                                                                                     
+<a name="l00203"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a42cb008a66e43e0a96a2f3ac34d0656e">00203</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a42cb008a66e43e0a96a2f3ac34d0656e" title="游戏是否开始">m_bGameStarted</a>;                                                                             
+<a name="l00204"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a8515496eef30ecc407e3b3c779b711b7">00204</a>         <span class="keywordtype">bool</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a8515496eef30ecc407e3b3c779b711b7" title="游戏是否失败">m_bLose</a>;                                                                                    
+<a name="l00205"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a78e456bc988c85d32ab8cc2158dfe49c">00205</a>         <span class="keywordtype">bool</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a78e456bc988c85d32ab8cc2158dfe49c" title="游戏是否胜利">m_bWin</a>;                                                                                     
+<a name="l00206"></a><a class="code" href="../../d4/dad/class_c_game_world.html#a7289350a9b24109460d42ceecd86665f">00206</a>         <span class="keywordtype">bool</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a7289350a9b24109460d42ceecd86665f" title="是否已经提示时间过">m_bTimeNotified</a>;                                                                            
+<a name="l00207"></a><a class="code" href="../../d4/dad/class_c_game_world.html#acd40b27a0662e68ac00ab3dd991b9204">00207</a>     <span class="keywordtype">int</span> <a class="code" href="../../d4/dad/class_c_game_world.html#acd40b27a0662e68ac00ab3dd991b9204" title="选中方块的ID(最多选中2个)">m_nSelArr</a>[2];                                                                                
+<a name="l00208"></a>00208         
+<a name="l00209"></a>00209 <span class="keyword">public</span>:
+<a name="l00210"></a>00210     <a class="code" href="../../d4/dad/class_c_game_world.html#a4deff78c2cc228c5ecc3be26ca810a60">CGameWorld</a>(<span class="keywordtype">void</span>);
+<a name="l00211"></a>00211         <a class="code" href="../../d4/dad/class_c_game_world.html#aff421e4d5ce84a782531d341780b4309">~CGameWorld</a>(<span class="keywordtype">void</span>);
+<a name="l00212"></a>00212         
+<a name="l00219"></a>00219     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a1f673e3ed7d8568dddf937d8d0b2cfc7" title="初始化函数 对类进行初始化，包括资源载入以及HGE引擎的初始化">Init</a>();
+<a name="l00220"></a>00220         
+<a name="l00227"></a>00227     <span class="keywordtype">bool</span> <a class="code" href="../../d4/dad/class_c_game_world.html#aee0574ed75cf678f4826b13b76027fd5" title="资源载入函数 将需要的资源载入到内存当中">LoadResource</a>();
+<a name="l00228"></a>00228         
+<a name="l00237"></a>00237     <span class="keywordtype">bool</span> <a class="code" href="../../d4/dad/class_c_game_world.html#aa8b734a74f5fd4930857b3abac6e3a28" title="四边形图元载入 从文件载入一个四边形图元">QLoad</a>(hgeQuad &amp;quad, <span class="keywordtype">char</span> *filename);
+<a name="l00238"></a>00238         
+<a name="l00249"></a>00249     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a4dd480350437063e67628717d072e3f7" title="四边形图元纹理坐标设置 设置一个图元的纹理坐标（这里设置一个矩形）">QuadTexture</a>(hgeQuad &amp;quad, <span class="keywordtype">float</span> x1, <span class="keywordtype">float</span> y1, <span class="keywordtype">float</span> x2, <span class="keywordtype">float</span> y2);
+<a name="l00250"></a>00250         
+<a name="l00261"></a>00261     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a84935de3f4d0780926b74ba7e5ea706b" title="四边形图元客户区域坐标设置 设置一个图元的客户区域坐标（这里设置一个矩形）">QuadScreen</a>(hgeQuad &amp;quad, <span class="keywordtype">float</span> x1, <span class="keywordtype">float</span> y1, <span class="keywordtype">float</span> x2, <span class="keywordtype">float</span> y2);
+<a name="l00262"></a>00262         
+<a name="l00268"></a>00268     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a5894242ccf58d33b50c7302f40194e1f" title="删除资源 游戏退出之前释放资源  *这个函数没有很好地完成">DelResource</a>();
+<a name="l00269"></a>00269         
+<a name="l00281"></a>00281     <span class="keywordtype">bool</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a4de48b2b576c5134f54107250d04f04e" title="游戏逻辑函数 游戏的动作在此，比如按钮按下、方块按下、计时器等">GameLogicFunc</a>();
+<a name="l00282"></a>00282         
+<a name="l00290"></a>00290     <span class="keywordtype">bool</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a07e27ffba492559e30ce680761d5bcf2" title="游戏渲染函数 进行游戏画面渲染">GameRenderFunc</a>();
+<a name="l00291"></a>00291         
+<a name="l00301"></a>00301     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a5ff1464cb81644cfeadb9d2decc3ef20" title="游戏开始函数 开始游戏时的一些初始化设置">GameStart</a>();
+<a name="l00302"></a>00302         
+<a name="l00309"></a>00309     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a1ab7c4e64efecd5fe98923fe37b7d488" title="游戏重置函数 重置一些游戏数据">GameReset</a>();
+<a name="l00310"></a>00310         
+<a name="l00317"></a>00317     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a3c18affb0557df001956ae08f1ee4948" title="创建地图函数 随机生成一个种子ID，并根据该种子随机生成地图">MakeMap</a>();
+<a name="l00318"></a>00318         
+<a name="l00325"></a>00325     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#ab7bd87757a2f9eeb723a8eb2dc94bf64" title="创建方块GUI 根据地图信息新建方块GUI">CreateElemGUI</a>();
+<a name="l00326"></a>00326         
+<a name="l00331"></a>00331     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#ad02cf4b930bef1572581ccd81ae664c3" title="删除方块GUI 删除全部方块GUI">ClearElemGUI</a>();
+<a name="l00332"></a>00332         
+<a name="l00341"></a>00341     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#adc6af36f1a9082df74429b3200d56050" title="开始搜索地图 将地图参数传入CMapSearch类的实例，并让该实例进行搜索">ToSearchMap</a>();
+<a name="l00342"></a>00342         
+<a name="l00349"></a>00349     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a72178a75fd204d138c87bb709d0e3b1b" title="放动画函数 将需要显示的闪电动画（不同坐标）放入一条链表">PutAni</a>(<a class="code" href="../../df/d9c/struct_point_path.html" title="路线结构体">PointPath</a> path);
+<a name="l00350"></a>00350         
+<a name="l00359"></a>00359     <span class="keywordtype">void</span> <a class="code" href="../../d4/dad/class_c_game_world.html#a0e00a3eb31b11349b642c42ad217a3c2" title="重排地图函数 将地图根据当前状态重新排列（用于道具重列或者当前状态无解的情况）">Resort</a>();
+<a name="l00360"></a>00360 };
+<a name="l00361"></a>00361 
+<a name="l00362"></a>00362 <span class="preprocessor">#endif</span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Generated at Fri Oct 8 2010 01:16:14 for 死月连连看 by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>
