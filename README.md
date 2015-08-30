@@ -15,9 +15,13 @@
   2. 配置选择：
     - 若需要编译 Debug 版可执行文件则解决方案配置选择 `Debug` 版即可。
     - 若需要编译 Release 版可执行文件则解决方案配置选择 `Release`。
-    > ![解决方案配置](http://ww4.sinaimg.cn/large/a15b4afegw1evknv8wdiqj20jb02naad)
+
+      > ![解决方案配置](http://ww4.sinaimg.cn/large/a15b4afegw1evknv8wdiqj20jb02naad)
+
   3. 右键单击解决方案资源管理器栏里面的 LinkMe 项目，并点击“生成”。
-    > ![生成](http://ww4.sinaimg.cn/large/a15b4afegw1evknwww13rj20d30ju42h)
+
+      > ![生成](http://ww4.sinaimg.cn/large/a15b4afegw1evknwww13rj20d30ju42h)
+
   4. 等待生成完毕，这个时候会在 `Bin/` 目录下生成可执行文件。若为 Debug 版则生成的是 `连连看D.exe`，若为 Release 版则为 `连连看.exe`。
   
 ## 资源打包
