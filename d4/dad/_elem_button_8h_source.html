@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>死月连连看: F:/VC2008 Proj/LinkMe/ElemButton.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 制作者 Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>F:/VC2008 Proj/LinkMe/ElemButton.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="../../d4/dad/_elem_button_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="preprocessor">#pragma once</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#include &lt;hge.h&gt;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &lt;hgegui.h&gt;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &lt;hgeanim.h&gt;</span>
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 <span class="keyword">class </span><a class="code" href="../../d4/dad/class_c_game_world.html" title="游戏类">CGameWorld</a>;
+<a name="l00023"></a>00023 
+<a name="l00024"></a><a class="code" href="../../d4/dad/_elem_button_8h.html#a61dc7a2456cfa7d47264da38932ff138">00024</a> <span class="preprocessor">#define PADDING_TOP             172                 ///&lt; 游戏区域顶部距离</span>
+<a name="l00025"></a><a class="code" href="../../d4/dad/_elem_button_8h.html#aceec74189a8ed1647f45b298c4ddfdae">00025</a> <span class="preprocessor"></span><span class="preprocessor">#define PADDING_LEFT            20                  ///&lt; 游戏区域左部距离</span>
+<a name="l00026"></a>00026 <span class="preprocessor"></span>
+<a name="l00027"></a><a class="code" href="../../d4/dad/_elem_button_8h.html#a529d5ebb449edf31d9835d13f4fb9f89">00027</a> <span class="preprocessor">#define MAP_HEIGHT              10                  ///&lt; 地图高度</span>
+<a name="l00028"></a><a class="code" href="../../d4/dad/_elem_button_8h.html#aa037a6d6a4f04d51c7ec1c9ee9054e76">00028</a> <span class="preprocessor"></span><span class="preprocessor">#define MAP_WIDTH               18                  ///&lt; 地图宽度</span>
+<a name="l00029"></a><a class="code" href="../../d4/dad/_elem_button_8h.html#a486bc7f0b9930269f50746606e1c7145">00029</a> <span class="preprocessor"></span><span class="preprocessor">#define ID_ELEM_GUI_START       50                  ///&lt; 方块GUI的起始ID</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span>
+<a name="l00031"></a><a class="code" href="../../d4/dad/_elem_button_8h.html#a2c9cea9fbef3e7bbc6fbc274ca8e55aa">00031</a> <span class="preprocessor">#define ELEM_INTERFACE_HEIGHT   36                  ///&lt; 方块表面的高度</span>
+<a name="l00032"></a><a class="code" href="../../d4/dad/_elem_button_8h.html#aa38cc8ceaf131dc799e7d2cc07f49850">00032</a> <span class="preprocessor"></span><span class="preprocessor">#define ELEM_INTERFACE_WIDTH    32                  ///&lt; 方块表面的宽度</span>
+<a name="l00033"></a><a class="code" href="../../d4/dad/_elem_button_8h.html#a0ed75b3076596b59932920e30f34c716">00033</a> <span class="preprocessor"></span><span class="preprocessor">#define ELEM_INTERFACE_OFFSET_X -4                  ///&lt; 方块的x轴偏移量</span>
+<a name="l00034"></a><a class="code" href="../../d4/dad/_elem_button_8h.html#a88d48763890a9e1cbfa83064ac02f968">00034</a> <span class="preprocessor"></span><span class="preprocessor">#define ELEM_INTERFACE_OFFSET_Y 0                   ///&lt; 方块的y轴偏移量</span>
+<a name="l00035"></a>00035 <span class="preprocessor"></span>
+<a name="l00042"></a><a class="code" href="../../de/dc5/class_c_elem_button.html">00042</a> <span class="keyword">class </span><a class="code" href="../../de/dc5/class_c_elem_button.html" title="方块GUI类">CElemButton</a> : <span class="keyword">public</span> hgeGUIObject
+<a name="l00043"></a>00043 {
+<a name="l00044"></a>00044 <span class="keyword">private</span>:
+<a name="l00045"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#a755ffb37093e0b2bd539aa61a99253f1">00045</a>     hgeSprite *<a class="code" href="../../de/dc5/class_c_elem_button.html#a755ffb37093e0b2bd539aa61a99253f1" title="方块GUI的画面精灵，内含方块纹理">m_pElem</a>;                             
+<a name="l00046"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#a93530803459435bf9eceadc4849dcc76">00046</a>     hgeSprite *<a class="code" href="../../de/dc5/class_c_elem_button.html#a93530803459435bf9eceadc4849dcc76" title="方块GUI选中效果精灵">m_pSel</a>;                              
+<a name="l00047"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#acfb8c456830f45a35699138cc275c54f">00047</a>     <a class="code" href="../../d4/dad/class_c_game_world.html" title="游戏类">CGameWorld</a> *<a class="code" href="../../de/dc5/class_c_elem_button.html#acfb8c456830f45a35699138cc275c54f" title="游戏核心类指针，指向它的父对象">m_pGameWorld</a>;                       
+<a name="l00048"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#aee2caf23ba9efa1ab3e160f155880a1e">00048</a>     <span class="keywordtype">float</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#aee2caf23ba9efa1ab3e160f155880a1e" title="该GUI在客户区域中的x坐标">Screen_x</a>;                                 
+<a name="l00049"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#a93aa2a5c7d060b999f6b17e8986dc694">00049</a>     <span class="keywordtype">float</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#a93aa2a5c7d060b999f6b17e8986dc694" title="该GUI在客户区域中的y坐标">Screen_y</a>;                                 
+<a name="l00050"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#a798dc3cf1fa9b0c8799c60e6862d23d6">00050</a>     <span class="keywordtype">int</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#a798dc3cf1fa9b0c8799c60e6862d23d6" title="该GUI在地图中的x坐标">Map_x</a>;                                      
+<a name="l00051"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#a03b4322ad4b59f59089d2aa2a12b6bd3">00051</a>     <span class="keywordtype">int</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#a03b4322ad4b59f59089d2aa2a12b6bd3" title="该GUI在地图中的y坐标">Map_y</a>;                                      
+<a name="l00052"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#aa125e984f11aff9b481366a9c70b70ec">00052</a>     <span class="keywordtype">int</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#aa125e984f11aff9b481366a9c70b70ec" title="该GUI的实际ID（减去起始点 ID_ELEM_GUI_START）">m_nRealID</a>;                                  
+<a name="l00053"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#a232ccdf302fb3e6a05dc37bace123119">00053</a>     HEFFECT <a class="code" href="../../de/dc5/class_c_elem_button.html#a232ccdf302fb3e6a05dc37bace123119" title="选中该GUI时的音效">m_SelSE</a>;                                
+<a name="l00054"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#a941c2febec9c1925e90b6d9dfeffc410">00054</a>     hgeAnimation *<a class="code" href="../../de/dc5/class_c_elem_button.html#a941c2febec9c1925e90b6d9dfeffc410" title="该GUI消去时的动画">m_pBoomAni</a>;                       
+<a name="l00055"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#a205d288d1ef71a0b735ec9576e46b3d0">00055</a>     <span class="keywordtype">float</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#a205d288d1ef71a0b735ec9576e46b3d0" title="该GUI的消去计时（时间到动画停止播放并且GUI消失）">timer</a>;                                    
+<a name="l00056"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#a0c8df8683a263f9be0bdcb399ab46dda">00056</a>     <span class="keywordtype">bool</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#a0c8df8683a263f9be0bdcb399ab46dda" title="GUI是否正在消失.">m_bLeaving</a>;                                
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058 <span class="keyword">public</span>:
+<a name="l00059"></a><a class="code" href="../../de/dc5/class_c_elem_button.html#a1c061ded8c4ea82e74e57dcec036b213">00059</a>     <span class="keywordtype">bool</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#a1c061ded8c4ea82e74e57dcec036b213" title="GUI是否被选中.">m_bSelected</a>;                               
+<a name="l00060"></a>00060         
+<a name="l00072"></a>00072     <a class="code" href="../../de/dc5/class_c_elem_button.html#aa16c6003f3952be395415e1019dd2058" title="构造函数 根据传入参数创建一个方块GUI">CElemButton</a>(<span class="keywordtype">int</span> _id, <a class="code" href="../../d4/dad/class_c_game_world.html" title="游戏类">CGameWorld</a> *pGameWorld, hgeSprite *pElem, hgeSprite *pSel, HEFFECT snd, hgeAnimation *pBoomAni);
+<a name="l00073"></a>00073     <a class="code" href="../../de/dc5/class_c_elem_button.html#a6472e2bae9c505218cf12120576321bf">~CElemButton</a>(<span class="keywordtype">void</span>);
+<a name="l00074"></a>00074         
+<a name="l00079"></a>00079     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#ad6a12432c68bcf7be18c49120b4fc949" title="渲染方块GUI（虚函数） 进行对方块GUI的渲染">Render</a>();
+<a name="l00080"></a>00080         
+<a name="l00088"></a>00088     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#adae7c64e1261e8f9c62152cd4471fa6e" title="方块GUI左键状态函数（虚函数） 方块GUI左键按下时所对应的动作">MouseLButton</a>(<span class="keywordtype">bool</span> bDown);
+<a name="l00089"></a>00089         
+<a name="l00095"></a>00095     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#a7bd6a4f66aff5942ee80b2749d1bc3e2" title="每次GUI更新时调用，用于更新控件动画。（虚函数）">Update</a>(<span class="keywordtype">float</span> dt);
+<a name="l00096"></a>00096         
+<a name="l00100"></a>00100     <span class="keywordtype">void</span> <a class="code" href="../../de/dc5/class_c_elem_button.html#ad05b8cab4d81aefab3e61e394e572bc8" title="设置该方块的状态为将要离去">ToLeave</a>();
+<a name="l00101"></a>00101 };
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Generated at Fri Oct 8 2010 01:16:14 for 死月连连看 by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

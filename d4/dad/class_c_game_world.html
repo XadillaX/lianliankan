@@ -1,0 +1,1357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>死月连连看: CGameWorld类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 制作者 Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-attribs">公有属性</a> &#124;
+<a href="#pri-methods">私有成员</a> &#124;
+<a href="#pri-attribs">私有属性</a>  </div>
+  <div class="headertitle">
+<h1>CGameWorld类参考</h1>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="CGameWorld" -->
+<p>游戏类  
+<a href="#_details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d5/d58/_game_world_8h_source.html">GameWorld.h</a>&gt;</code></p>
+<div class="dynheader">
+CGameWorld合作图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/de8/class_c_game_world__coll__graph.png" border="0" usemap="#_c_game_world_coll__map" alt="Collaboration graph"/></div>
+<map name="_c_game_world_coll__map" id="_c_game_world_coll__map">
+<area shape="rect" id="node2" href="../../de/dc5/class_c_elem_button.html" title="方块GUI类" alt="" coords="103,405,201,435"/><area shape="rect" id="node5" href="../../dc/d9e/struct_map_type.html" title="地图类型" alt="" coords="5,213,80,243"/><area shape="rect" id="node7" href="../../db/d29/class_c_map_search.html" title="地图搜索类" alt="" coords="104,213,200,243"/><area shape="rect" id="node9" href="../../d9/de3/struct_coor_type.html" title="地图坐标结构体" alt="" coords="104,5,181,35"/><area shape="rect" id="node11" href="../../df/d9c/struct_point_path.html" title="路线结构体" alt="" coords="152,101,229,131"/><area shape="rect" id="node14" href="../../d9/d50/struct_map_seed_type.html" title="地图种子类型" alt="" coords="224,213,328,243"/></map>
+<center><span class="legend">[<a href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d5/d3c/class_c_game_world-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a4deff78c2cc228c5ecc3be26ca810a60">CGameWorld</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#aff421e4d5ce84a782531d341780b4309">~CGameWorld</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a1f673e3ed7d8568dddf937d8d0b2cfc7">Init</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">初始化函数 对类进行初始化，包括资源载入以及HGE引擎的初始化  <a href="#a1f673e3ed7d8568dddf937d8d0b2cfc7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#aee0574ed75cf678f4826b13b76027fd5">LoadResource</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">资源载入函数 将需要的资源载入到内存当中  <a href="#aee0574ed75cf678f4826b13b76027fd5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#aa8b734a74f5fd4930857b3abac6e3a28">QLoad</a> (hgeQuad &amp;quad, char *filename)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">四边形图元载入 从文件载入一个四边形图元  <a href="#aa8b734a74f5fd4930857b3abac6e3a28"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a4dd480350437063e67628717d072e3f7">QuadTexture</a> (hgeQuad &amp;quad, float x1, float y1, float x2, float y2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">四边形图元纹理坐标设置 设置一个图元的纹理坐标（这里设置一个矩形）  <a href="#a4dd480350437063e67628717d072e3f7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a84935de3f4d0780926b74ba7e5ea706b">QuadScreen</a> (hgeQuad &amp;quad, float x1, float y1, float x2, float y2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">四边形图元客户区域坐标设置 设置一个图元的客户区域坐标（这里设置一个矩形）  <a href="#a84935de3f4d0780926b74ba7e5ea706b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a5894242ccf58d33b50c7302f40194e1f">DelResource</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">删除资源 游戏退出之前释放资源<br/>
+ *这个函数没有很好地完成  <a href="#a5894242ccf58d33b50c7302f40194e1f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a4de48b2b576c5134f54107250d04f04e">GameLogicFunc</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">游戏逻辑函数 游戏的动作在此，比如按钮按下、方块按下、计时器等  <a href="#a4de48b2b576c5134f54107250d04f04e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a07e27ffba492559e30ce680761d5bcf2">GameRenderFunc</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">游戏渲染函数 进行游戏画面渲染  <a href="#a07e27ffba492559e30ce680761d5bcf2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a5ff1464cb81644cfeadb9d2decc3ef20">GameStart</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">游戏开始函数 开始游戏时的一些初始化设置  <a href="#a5ff1464cb81644cfeadb9d2decc3ef20"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a1ab7c4e64efecd5fe98923fe37b7d488">GameReset</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">游戏重置函数 重置一些游戏数据  <a href="#a1ab7c4e64efecd5fe98923fe37b7d488"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a3c18affb0557df001956ae08f1ee4948">MakeMap</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建地图函数 随机生成一个种子ID，并根据该种子随机生成地图  <a href="#a3c18affb0557df001956ae08f1ee4948"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#ab7bd87757a2f9eeb723a8eb2dc94bf64">CreateElemGUI</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建方块GUI 根据地图信息新建方块GUI  <a href="#ab7bd87757a2f9eeb723a8eb2dc94bf64"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#ad02cf4b930bef1572581ccd81ae664c3">ClearElemGUI</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">删除方块GUI 删除全部方块GUI  <a href="#ad02cf4b930bef1572581ccd81ae664c3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#adc6af36f1a9082df74429b3200d56050">ToSearchMap</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">开始搜索地图 将地图参数传入CMapSearch类的实例，并让该实例进行搜索  <a href="#adc6af36f1a9082df74429b3200d56050"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a72178a75fd204d138c87bb709d0e3b1b">PutAni</a> (<a class="el" href="../../df/d9c/struct_point_path.html">PointPath</a> path)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">放动画函数 将需要显示的闪电动画（不同坐标）放入一条链表  <a href="#a72178a75fd204d138c87bb709d0e3b1b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a0e00a3eb31b11349b642c42ad217a3c2">Resort</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">重排地图函数 将地图根据当前状态重新排列（用于道具重列或者当前状态无解的情况）  <a href="#a0e00a3eb31b11349b642c42ad217a3c2"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HGE *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#aa92daf802897db467ac78aadd4857ca8">Engine</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">*核心 ―― HGE引擎  <a href="#aa92daf802897db467ac78aadd4857ca8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a42cb008a66e43e0a96a2f3ac34d0656e">m_bGameStarted</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">游戏是否开始  <a href="#a42cb008a66e43e0a96a2f3ac34d0656e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a8515496eef30ecc407e3b3c779b711b7">m_bLose</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">游戏是否失败  <a href="#a8515496eef30ecc407e3b3c779b711b7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a78e456bc988c85d32ab8cc2158dfe49c">m_bWin</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">游戏是否胜利  <a href="#a78e456bc988c85d32ab8cc2158dfe49c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a7289350a9b24109460d42ceecd86665f">m_bTimeNotified</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">是否已经提示时间过  <a href="#a7289350a9b24109460d42ceecd86665f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#acd40b27a0662e68ac00ab3dd991b9204">m_nSelArr</a> [2]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">选中方块的ID(最多选中2个)  <a href="#acd40b27a0662e68ac00ab3dd991b9204"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pri-methods"></a>
+私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a957b831bfef4b833f0802db3d4bdd514">BoomLineRender</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">闪电动画渲染 对链表中的闪电动画进行渲染，过时的动画从链表中删除  <a href="#a957b831bfef4b833f0802db3d4bdd514"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">hgeQuad&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#ad2d77680015ceabf636b1ebc33089bbf">Background</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">背景四边形图元  <a href="#ad2d77680015ceabf636b1ebc33089bbf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HTEXTURE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a3a240b2220c71300853c984eedac70e4">m_CursorTexture</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">鼠标纹理  <a href="#a3a240b2220c71300853c984eedac70e4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HTEXTURE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a71cebce090f8a6081ccf3badf6c4092a">StartBtnTexture</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">开始按钮纹理  <a href="#a71cebce090f8a6081ccf3badf6c4092a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HTEXTURE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a38849696ab38a415f547f454fdf1c711">m_ElemTexture</a> [MAX_ELEM_TEXTURE]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">方块纹理数组  <a href="#a38849696ab38a415f547f454fdf1c711"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HTEXTURE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a38e446346b68442152c15641ae39bd98">m_ElemSelTexture</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">方块选中效果纹理  <a href="#a38e446346b68442152c15641ae39bd98"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HTEXTURE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a8781dbfe5d7fe35418e457a3f1d49fb8">m_BoomTexture</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">爆炸动画纹理  <a href="#a8781dbfe5d7fe35418e457a3f1d49fb8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HTEXTURE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a07e579bffdbf07a2c8cca632f9b2d999">m_ElecTexture</a> [6]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">闪电动画纹理数组  <a href="#a07e579bffdbf07a2c8cca632f9b2d999"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HTEXTURE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a1ba5be44ca29a7ceb4297d1462b00ebf">m_TimeBarTexture</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">时间轴纹理  <a href="#a1ba5be44ca29a7ceb4297d1462b00ebf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HTEXTURE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#ab91a2ad2ce5aac20bc92e07e9dc39f14">m_HintTexture</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">提示道具纹理  <a href="#ab91a2ad2ce5aac20bc92e07e9dc39f14"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HTEXTURE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#ae9cafcff3e0e35f8b6f698d2bc021f85">m_ResortTexture</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">重排道具纹理  <a href="#ae9cafcff3e0e35f8b6f698d2bc021f85"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">hgeGUI *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a9476155b26caa5c9fa19bae3fb409a54">gui</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">界面GUI变量  <a href="#a9476155b26caa5c9fa19bae3fb409a54"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">hgeSprite *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a2d2f9cd704537df313abaed58069f386">m_pCursor</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">HGE鼠标精灵.  <a href="#a2d2f9cd704537df313abaed58069f386"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">hgeSprite *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a3648559ecd38ffc58ca7864dfda78dad">m_pElement</a> [MAX_ELEM_TEXTURE *4]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">HGE方块精灵数组.  <a href="#a3648559ecd38ffc58ca7864dfda78dad"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">hgeSprite *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#ae869931782d9c189daad5bec2c979916">m_pElemSel</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">HGE选中效果精灵.  <a href="#ae869931782d9c189daad5bec2c979916"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">hgeSprite *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a263ec19f9e9aba86e9a4cbdc3e4a1384">m_pTimeBar</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">HGE时间轴精灵.  <a href="#a263ec19f9e9aba86e9a4cbdc3e4a1384"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HEFFECT&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a684b5661c8e49a7c2da4d7626ba27fdd">BGM</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">背景音乐  <a href="#a684b5661c8e49a7c2da4d7626ba27fdd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HEFFECT&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a040b5c8dc37ee957aa52e8acca696309">StartSE</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">开始按钮SE  <a href="#a040b5c8dc37ee957aa52e8acca696309"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HEFFECT&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a3abb542b6d95482e5e059859216fb0fe">ElemSelSE</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">选中效果SE  <a href="#a3abb542b6d95482e5e059859216fb0fe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HEFFECT&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a3086d3f8e9ff029fd17a9774ad15766e">ElecSE</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">闪电SE  <a href="#a3086d3f8e9ff029fd17a9774ad15766e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HEFFECT&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a901d748df822d0d92bd9f4066c84fb5f">EndSE</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">游戏结束SE  <a href="#a901d748df822d0d92bd9f4066c84fb5f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HEFFECT&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a5e7f22e25adf734b86809e643a11bb7d">ItemBoomSE</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">方块爆炸SE  <a href="#a5e7f22e25adf734b86809e643a11bb7d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HEFFECT&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a71ae5f893994cfd835aec36e43aa4c37">LessTimeSE</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">时间快到SE  <a href="#a71ae5f893994cfd835aec36e43aa4c37"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HEFFECT&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#af1dbcf79f9d1e8d2df26d83f6c47da87">HintSE</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">提示道具SE  <a href="#af1dbcf79f9d1e8d2df26d83f6c47da87"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HEFFECT&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a3d80121860a2b6a9dc0afc68caa03333">ResortSE</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">重拍道具SE  <a href="#a3d80121860a2b6a9dc0afc68caa03333"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d50/struct_map_seed_type.html">MapSeedType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a1ab8f43d2457a9b7257c89e2c915f3eb">m_MapSeed</a> [MAP_SEED_NUM]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">地图种子  <a href="#a1ab8f43d2457a9b7257c89e2c915f3eb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a869cbd550dfe626d8442ce91d6bed8e2">m_nLastGUIID</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">最后按下的GUI的ID  <a href="#a869cbd550dfe626d8442ce91d6bed8e2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a7c3817699f8222739d97b2dd6e822e4f">m_nSeedID</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">当前地图的种子ID  <a href="#a7c3817699f8222739d97b2dd6e822e4f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">HCHANNEL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#ab2548440a683f4a8c763d502d8afd53c">BGMChannel</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">HGE的BGM频道.  <a href="#ab2548440a683f4a8c763d502d8afd53c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d9e/struct_map_type.html">MapType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a4ac08d06f0bf5098f491f85b293623d0">m_Map</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">地图  <a href="#a4ac08d06f0bf5098f491f85b293623d0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">hgeFont *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a5722c4e9a007a04e775e45c54cd3bb73">fnt</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">HGE字体.  <a href="#a5722c4e9a007a04e775e45c54cd3bb73"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">hgeAnimation *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a913bb7eb4c44f4d37dbbb250acbcc65f">m_BoomAni</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">爆炸动画精灵  <a href="#a913bb7eb4c44f4d37dbbb250acbcc65f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">hgeAnimation *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#add87006b749e2b2d30af045712fd7f5b">m_ThunderAni</a> [6]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">闪电动画精灵  <a href="#add87006b749e2b2d30af045712fd7f5b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/dc5/class_c_elem_button.html">CElemButton</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#a404b7f9fec7587f8deed5b3d465b8174">m_pElemButtonArr</a> [300]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">方块GUI数组  <a href="#a404b7f9fec7587f8deed5b3d465b8174"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d29/class_c_map_search.html">CMapSearch</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#acae38f0edd84d5d09cda11631aacabb1">m_pMapSearch</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">地图搜索类的实例  <a href="#acae38f0edd84d5d09cda11631aacabb1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#aa45953c5278bf103385c722d7b832c25">m_thisTime</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">这一次的计时  <a href="#aa45953c5278bf103385c722d7b832c25"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="../../d4/dbd/struct_boom_ani.html">BoomAni</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dad/class_c_game_world.html#ae150f6345c87c332a62aadc55e6d8e4a">BA</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">当前需要显示的动画链表  <a href="#ae150f6345c87c332a62aadc55e6d8e4a"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>游戏类 </p>
+<p>连连看游戏的核心类，包含主要的逻辑、渲染等函数及变量。 </p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a4deff78c2cc228c5ecc3be26ca810a60"></a><!-- doxytag: member="CGameWorld::CGameWorld" ref="a4deff78c2cc228c5ecc3be26ca810a60" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CGameWorld::CGameWorld </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aff421e4d5ce84a782531d341780b4309"></a><!-- doxytag: member="CGameWorld::~CGameWorld" ref="aff421e4d5ce84a782531d341780b4309" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CGameWorld::~CGameWorld </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a957b831bfef4b833f0802db3d4bdd514"></a><!-- doxytag: member="CGameWorld::BoomLineRender" ref="a957b831bfef4b833f0802db3d4bdd514" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::BoomLineRender </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>闪电动画渲染 对链表中的闪电动画进行渲染，过时的动画从链表中删除 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad02cf4b930bef1572581ccd81ae664c3"></a><!-- doxytag: member="CGameWorld::ClearElemGUI" ref="ad02cf4b930bef1572581ccd81ae664c3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::ClearElemGUI </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>删除方块GUI 删除全部方块GUI </p>
+
+</div>
+</div>
+<a class="anchor" id="ab7bd87757a2f9eeb723a8eb2dc94bf64"></a><!-- doxytag: member="CGameWorld::CreateElemGUI" ref="ab7bd87757a2f9eeb723a8eb2dc94bf64" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::CreateElemGUI </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>创建方块GUI 根据地图信息新建方块GUI </p>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../de/dc5/class_c_elem_button.html#aa16c6003f3952be395415e1019dd2058" title="构造函数 根据传入参数创建一个方块GUI">CElemButton::CElemButton</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5894242ccf58d33b50c7302f40194e1f"></a><!-- doxytag: member="CGameWorld::DelResource" ref="a5894242ccf58d33b50c7302f40194e1f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::DelResource </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>删除资源 游戏退出之前释放资源<br/>
+ *这个函数没有很好地完成 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4de48b2b576c5134f54107250d04f04e"></a><!-- doxytag: member="CGameWorld::GameLogicFunc" ref="a4de48b2b576c5134f54107250d04f04e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CGameWorld::GameLogicFunc </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>游戏逻辑函数 游戏的动作在此，比如按钮按下、方块按下、计时器等 </p>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../d4/dad/class_c_game_world.html#a5ff1464cb81644cfeadb9d2decc3ef20" title="游戏开始函数 开始游戏时的一些初始化设置">GameStart</a> </dd>
+<dd>
+<a class="el" href="../../d4/dad/class_c_game_world.html#a0e00a3eb31b11349b642c42ad217a3c2" title="重排地图函数 将地图根据当前状态重新排列（用于道具重列或者当前状态无解的情况）">Resort</a> </dd>
+<dd>
+<a class="el" href="../../db/d29/class_c_map_search.html#a774c5bb73bdc2eb9267e206a17db29c3" title="得到路径 得到两个坐标的连线具体路径">CMapSearch::GetPath</a> </dd>
+<dd>
+<a class="el" href="../../d4/dad/class_c_game_world.html#a72178a75fd204d138c87bb709d0e3b1b" title="放动画函数 将需要显示的闪电动画（不同坐标）放入一条链表">PutAni</a> </dd>
+<dd>
+<a class="el" href="../../d4/dad/class_c_game_world.html#adc6af36f1a9082df74429b3200d56050" title="开始搜索地图 将地图参数传入CMapSearch类的实例，并让该实例进行搜索">ToSearchMap</a> </dd></dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>若将要退出游戏程序则返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a07e27ffba492559e30ce680761d5bcf2"></a><!-- doxytag: member="CGameWorld::GameRenderFunc" ref="a07e27ffba492559e30ce680761d5bcf2" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CGameWorld::GameRenderFunc </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>游戏渲染函数 进行游戏画面渲染 </p>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../d4/dad/class_c_game_world.html#a957b831bfef4b833f0802db3d4bdd514" title="闪电动画渲染 对链表中的闪电动画进行渲染，过时的动画从链表中删除">BoomLineRender</a> </dd></dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>若将要退出游戏程序则返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ab7c4e64efecd5fe98923fe37b7d488"></a><!-- doxytag: member="CGameWorld::GameReset" ref="a1ab7c4e64efecd5fe98923fe37b7d488" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::GameReset </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>游戏重置函数 重置一些游戏数据 </p>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../d4/dad/class_c_game_world.html#ad02cf4b930bef1572581ccd81ae664c3" title="删除方块GUI 删除全部方块GUI">ClearElemGUI</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5ff1464cb81644cfeadb9d2decc3ef20"></a><!-- doxytag: member="CGameWorld::GameStart" ref="a5ff1464cb81644cfeadb9d2decc3ef20" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::GameStart </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>游戏开始函数 开始游戏时的一些初始化设置 </p>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../d4/dad/class_c_game_world.html#a1ab7c4e64efecd5fe98923fe37b7d488" title="游戏重置函数 重置一些游戏数据">GameReset</a> </dd>
+<dd>
+<a class="el" href="../../d4/dad/class_c_game_world.html#a3c18affb0557df001956ae08f1ee4948" title="创建地图函数 随机生成一个种子ID，并根据该种子随机生成地图">MakeMap</a> </dd>
+<dd>
+<a class="el" href="../../d4/dad/class_c_game_world.html#ab7bd87757a2f9eeb723a8eb2dc94bf64" title="创建方块GUI 根据地图信息新建方块GUI">CreateElemGUI</a> </dd>
+<dd>
+<a class="el" href="../../d4/dad/class_c_game_world.html#adc6af36f1a9082df74429b3200d56050" title="开始搜索地图 将地图参数传入CMapSearch类的实例，并让该实例进行搜索">ToSearchMap</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1f673e3ed7d8568dddf937d8d0b2cfc7"></a><!-- doxytag: member="CGameWorld::Init" ref="a1f673e3ed7d8568dddf937d8d0b2cfc7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::Init </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>初始化函数 对类进行初始化，包括资源载入以及HGE引擎的初始化 </p>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../d4/dad/class_c_game_world.html#aee0574ed75cf678f4826b13b76027fd5" title="资源载入函数 将需要的资源载入到内存当中">LoadResource</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aee0574ed75cf678f4826b13b76027fd5"></a><!-- doxytag: member="CGameWorld::LoadResource" ref="aee0574ed75cf678f4826b13b76027fd5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CGameWorld::LoadResource </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>资源载入函数 将需要的资源载入到内存当中 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>若有至少一个资源载入失败则返回false，否则返回true </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3c18affb0557df001956ae08f1ee4948"></a><!-- doxytag: member="CGameWorld::MakeMap" ref="a3c18affb0557df001956ae08f1ee4948" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::MakeMap </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>创建地图函数 随机生成一个种子ID，并根据该种子随机生成地图 </p>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../d4/dad/class_c_game_world.html#ad02cf4b930bef1572581ccd81ae664c3" title="删除方块GUI 删除全部方块GUI">ClearElemGUI</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a72178a75fd204d138c87bb709d0e3b1b"></a><!-- doxytag: member="CGameWorld::PutAni" ref="a72178a75fd204d138c87bb709d0e3b1b" args="(PointPath path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::PutAni </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d9c/struct_point_path.html">PointPath</a>&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>放动画函数 将需要显示的闪电动画（不同坐标）放入一条链表 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>path</em>&nbsp;</td><td>路线结构体，函数将在此路线上每一个地图坐标放上一个闪电动画精灵加入链表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa8b734a74f5fd4930857b3abac6e3a28"></a><!-- doxytag: member="CGameWorld::QLoad" ref="aa8b734a74f5fd4930857b3abac6e3a28" args="(hgeQuad &amp;quad, char *filename)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CGameWorld::QLoad </td>
+          <td>(</td>
+          <td class="paramtype">hgeQuad &amp;&nbsp;</td>
+          <td class="paramname"> <em>quad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>四边形图元载入 从文件载入一个四边形图元 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>quad</em>&nbsp;</td><td>将接受四边形图元的变量 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>filename</em>&nbsp;</td><td>图片文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>若载入成功则返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a84935de3f4d0780926b74ba7e5ea706b"></a><!-- doxytag: member="CGameWorld::QuadScreen" ref="a84935de3f4d0780926b74ba7e5ea706b" args="(hgeQuad &amp;quad, float x1, float y1, float x2, float y2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::QuadScreen </td>
+          <td>(</td>
+          <td class="paramtype">hgeQuad &amp;&nbsp;</td>
+          <td class="paramname"> <em>quad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>四边形图元客户区域坐标设置 设置一个图元的客户区域坐标（这里设置一个矩形） </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>quad</em>&nbsp;</td><td>将接受设置四边形图元的变量 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x1</em>&nbsp;</td><td>左上角x坐标 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y1</em>&nbsp;</td><td>左上角y坐标 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x2</em>&nbsp;</td><td>右下角x坐标 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y2</em>&nbsp;</td><td>右下角y坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4dd480350437063e67628717d072e3f7"></a><!-- doxytag: member="CGameWorld::QuadTexture" ref="a4dd480350437063e67628717d072e3f7" args="(hgeQuad &amp;quad, float x1, float y1, float x2, float y2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::QuadTexture </td>
+          <td>(</td>
+          <td class="paramtype">hgeQuad &amp;&nbsp;</td>
+          <td class="paramname"> <em>quad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>四边形图元纹理坐标设置 设置一个图元的纹理坐标（这里设置一个矩形） </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>quad</em>&nbsp;</td><td>将接受设置四边形图元的变量 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x1</em>&nbsp;</td><td>左上角x坐标 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y1</em>&nbsp;</td><td>左上角y坐标 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x2</em>&nbsp;</td><td>右下角x坐标 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y2</em>&nbsp;</td><td>右下角y坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0e00a3eb31b11349b642c42ad217a3c2"></a><!-- doxytag: member="CGameWorld::Resort" ref="a0e00a3eb31b11349b642c42ad217a3c2" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::Resort </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>重排地图函数 将地图根据当前状态重新排列（用于道具重列或者当前状态无解的情况） </p>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../d4/dad/class_c_game_world.html#ad02cf4b930bef1572581ccd81ae664c3" title="删除方块GUI 删除全部方块GUI">ClearElemGUI</a> </dd>
+<dd>
+<a class="el" href="../../d4/dad/class_c_game_world.html#ab7bd87757a2f9eeb723a8eb2dc94bf64" title="创建方块GUI 根据地图信息新建方块GUI">CreateElemGUI</a> </dd>
+<dd>
+<a class="el" href="../../d4/dad/class_c_game_world.html#adc6af36f1a9082df74429b3200d56050" title="开始搜索地图 将地图参数传入CMapSearch类的实例，并让该实例进行搜索">ToSearchMap</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adc6af36f1a9082df74429b3200d56050"></a><!-- doxytag: member="CGameWorld::ToSearchMap" ref="adc6af36f1a9082df74429b3200d56050" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGameWorld::ToSearchMap </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>开始搜索地图 将地图参数传入CMapSearch类的实例，并让该实例进行搜索 </p>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../db/d29/class_c_map_search.html" title="地图搜索类">CMapSearch</a> </dd>
+<dd>
+<a class="el" href="../../db/d29/class_c_map_search.html#ae027c6cfce9303227efba104b553c4df" title="搜索地图 对整个地图进行搜索每两个相同方块之间的路径">CMapSearch::Search</a> </dd>
+<dd>
+<a class="el" href="../../d4/dad/class_c_game_world.html#a0e00a3eb31b11349b642c42ad217a3c2" title="重排地图函数 将地图根据当前状态重新排列（用于道具重列或者当前状态无解的情况）">Resort</a> </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="ae150f6345c87c332a62aadc55e6d8e4a"></a><!-- doxytag: member="CGameWorld::BA" ref="ae150f6345c87c332a62aadc55e6d8e4a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt;<a class="el" href="../../d4/dbd/struct_boom_ani.html">BoomAni</a>&gt; <a class="el" href="../../d4/dad/class_c_game_world.html#ae150f6345c87c332a62aadc55e6d8e4a">CGameWorld::BA</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>当前需要显示的动画链表 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad2d77680015ceabf636b1ebc33089bbf"></a><!-- doxytag: member="CGameWorld::Background" ref="ad2d77680015ceabf636b1ebc33089bbf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hgeQuad <a class="el" href="../../d4/dad/class_c_game_world.html#ad2d77680015ceabf636b1ebc33089bbf">CGameWorld::Background</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>背景四边形图元 </p>
+
+</div>
+</div>
+<a class="anchor" id="a684b5661c8e49a7c2da4d7626ba27fdd"></a><!-- doxytag: member="CGameWorld::BGM" ref="a684b5661c8e49a7c2da4d7626ba27fdd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HEFFECT <a class="el" href="../../d4/dad/class_c_game_world.html#a684b5661c8e49a7c2da4d7626ba27fdd">CGameWorld::BGM</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>背景音乐 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab2548440a683f4a8c763d502d8afd53c"></a><!-- doxytag: member="CGameWorld::BGMChannel" ref="ab2548440a683f4a8c763d502d8afd53c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HCHANNEL <a class="el" href="../../d4/dad/class_c_game_world.html#ab2548440a683f4a8c763d502d8afd53c">CGameWorld::BGMChannel</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>HGE的BGM频道. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3086d3f8e9ff029fd17a9774ad15766e"></a><!-- doxytag: member="CGameWorld::ElecSE" ref="a3086d3f8e9ff029fd17a9774ad15766e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HEFFECT <a class="el" href="../../d4/dad/class_c_game_world.html#a3086d3f8e9ff029fd17a9774ad15766e">CGameWorld::ElecSE</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>闪电SE </p>
+
+</div>
+</div>
+<a class="anchor" id="a3abb542b6d95482e5e059859216fb0fe"></a><!-- doxytag: member="CGameWorld::ElemSelSE" ref="a3abb542b6d95482e5e059859216fb0fe" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HEFFECT <a class="el" href="../../d4/dad/class_c_game_world.html#a3abb542b6d95482e5e059859216fb0fe">CGameWorld::ElemSelSE</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>选中效果SE </p>
+
+</div>
+</div>
+<a class="anchor" id="a901d748df822d0d92bd9f4066c84fb5f"></a><!-- doxytag: member="CGameWorld::EndSE" ref="a901d748df822d0d92bd9f4066c84fb5f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HEFFECT <a class="el" href="../../d4/dad/class_c_game_world.html#a901d748df822d0d92bd9f4066c84fb5f">CGameWorld::EndSE</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>游戏结束SE </p>
+
+</div>
+</div>
+<a class="anchor" id="aa92daf802897db467ac78aadd4857ca8"></a><!-- doxytag: member="CGameWorld::Engine" ref="aa92daf802897db467ac78aadd4857ca8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HGE* <a class="el" href="../../d4/dad/class_c_game_world.html#aa92daf802897db467ac78aadd4857ca8">CGameWorld::Engine</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>*核心 ―― HGE引擎 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5722c4e9a007a04e775e45c54cd3bb73"></a><!-- doxytag: member="CGameWorld::fnt" ref="a5722c4e9a007a04e775e45c54cd3bb73" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hgeFont* <a class="el" href="../../d4/dad/class_c_game_world.html#a5722c4e9a007a04e775e45c54cd3bb73">CGameWorld::fnt</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>HGE字体. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9476155b26caa5c9fa19bae3fb409a54"></a><!-- doxytag: member="CGameWorld::gui" ref="a9476155b26caa5c9fa19bae3fb409a54" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hgeGUI* <a class="el" href="../../d4/dad/class_c_game_world.html#a9476155b26caa5c9fa19bae3fb409a54">CGameWorld::gui</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>界面GUI变量 </p>
+
+</div>
+</div>
+<a class="anchor" id="af1dbcf79f9d1e8d2df26d83f6c47da87"></a><!-- doxytag: member="CGameWorld::HintSE" ref="af1dbcf79f9d1e8d2df26d83f6c47da87" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HEFFECT <a class="el" href="../../d4/dad/class_c_game_world.html#af1dbcf79f9d1e8d2df26d83f6c47da87">CGameWorld::HintSE</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>提示道具SE </p>
+
+</div>
+</div>
+<a class="anchor" id="a5e7f22e25adf734b86809e643a11bb7d"></a><!-- doxytag: member="CGameWorld::ItemBoomSE" ref="a5e7f22e25adf734b86809e643a11bb7d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HEFFECT <a class="el" href="../../d4/dad/class_c_game_world.html#a5e7f22e25adf734b86809e643a11bb7d">CGameWorld::ItemBoomSE</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>方块爆炸SE </p>
+
+</div>
+</div>
+<a class="anchor" id="a71ae5f893994cfd835aec36e43aa4c37"></a><!-- doxytag: member="CGameWorld::LessTimeSE" ref="a71ae5f893994cfd835aec36e43aa4c37" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HEFFECT <a class="el" href="../../d4/dad/class_c_game_world.html#a71ae5f893994cfd835aec36e43aa4c37">CGameWorld::LessTimeSE</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>时间快到SE </p>
+
+</div>
+</div>
+<a class="anchor" id="a42cb008a66e43e0a96a2f3ac34d0656e"></a><!-- doxytag: member="CGameWorld::m_bGameStarted" ref="a42cb008a66e43e0a96a2f3ac34d0656e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d4/dad/class_c_game_world.html#a42cb008a66e43e0a96a2f3ac34d0656e">CGameWorld::m_bGameStarted</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>游戏是否开始 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8515496eef30ecc407e3b3c779b711b7"></a><!-- doxytag: member="CGameWorld::m_bLose" ref="a8515496eef30ecc407e3b3c779b711b7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d4/dad/class_c_game_world.html#a8515496eef30ecc407e3b3c779b711b7">CGameWorld::m_bLose</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>游戏是否失败 </p>
+
+</div>
+</div>
+<a class="anchor" id="a913bb7eb4c44f4d37dbbb250acbcc65f"></a><!-- doxytag: member="CGameWorld::m_BoomAni" ref="a913bb7eb4c44f4d37dbbb250acbcc65f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hgeAnimation* <a class="el" href="../../d4/dad/class_c_game_world.html#a913bb7eb4c44f4d37dbbb250acbcc65f">CGameWorld::m_BoomAni</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>爆炸动画精灵 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8781dbfe5d7fe35418e457a3f1d49fb8"></a><!-- doxytag: member="CGameWorld::m_BoomTexture" ref="a8781dbfe5d7fe35418e457a3f1d49fb8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTEXTURE <a class="el" href="../../d4/dad/class_c_game_world.html#a8781dbfe5d7fe35418e457a3f1d49fb8">CGameWorld::m_BoomTexture</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>爆炸动画纹理 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7289350a9b24109460d42ceecd86665f"></a><!-- doxytag: member="CGameWorld::m_bTimeNotified" ref="a7289350a9b24109460d42ceecd86665f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d4/dad/class_c_game_world.html#a7289350a9b24109460d42ceecd86665f">CGameWorld::m_bTimeNotified</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>是否已经提示时间过 </p>
+
+</div>
+</div>
+<a class="anchor" id="a78e456bc988c85d32ab8cc2158dfe49c"></a><!-- doxytag: member="CGameWorld::m_bWin" ref="a78e456bc988c85d32ab8cc2158dfe49c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d4/dad/class_c_game_world.html#a78e456bc988c85d32ab8cc2158dfe49c">CGameWorld::m_bWin</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>游戏是否胜利 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3a240b2220c71300853c984eedac70e4"></a><!-- doxytag: member="CGameWorld::m_CursorTexture" ref="a3a240b2220c71300853c984eedac70e4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTEXTURE <a class="el" href="../../d4/dad/class_c_game_world.html#a3a240b2220c71300853c984eedac70e4">CGameWorld::m_CursorTexture</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>鼠标纹理 </p>
+
+</div>
+</div>
+<a class="anchor" id="a07e579bffdbf07a2c8cca632f9b2d999"></a><!-- doxytag: member="CGameWorld::m_ElecTexture" ref="a07e579bffdbf07a2c8cca632f9b2d999" args="[6]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTEXTURE <a class="el" href="../../d4/dad/class_c_game_world.html#a07e579bffdbf07a2c8cca632f9b2d999">CGameWorld::m_ElecTexture</a>[6]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>闪电动画纹理数组 </p>
+
+</div>
+</div>
+<a class="anchor" id="a38e446346b68442152c15641ae39bd98"></a><!-- doxytag: member="CGameWorld::m_ElemSelTexture" ref="a38e446346b68442152c15641ae39bd98" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTEXTURE <a class="el" href="../../d4/dad/class_c_game_world.html#a38e446346b68442152c15641ae39bd98">CGameWorld::m_ElemSelTexture</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>方块选中效果纹理 </p>
+
+</div>
+</div>
+<a class="anchor" id="a38849696ab38a415f547f454fdf1c711"></a><!-- doxytag: member="CGameWorld::m_ElemTexture" ref="a38849696ab38a415f547f454fdf1c711" args="[MAX_ELEM_TEXTURE]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTEXTURE <a class="el" href="../../d4/dad/class_c_game_world.html#a38849696ab38a415f547f454fdf1c711">CGameWorld::m_ElemTexture</a>[MAX_ELEM_TEXTURE]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>方块纹理数组 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab91a2ad2ce5aac20bc92e07e9dc39f14"></a><!-- doxytag: member="CGameWorld::m_HintTexture" ref="ab91a2ad2ce5aac20bc92e07e9dc39f14" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTEXTURE <a class="el" href="../../d4/dad/class_c_game_world.html#ab91a2ad2ce5aac20bc92e07e9dc39f14">CGameWorld::m_HintTexture</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>提示道具纹理 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ac08d06f0bf5098f491f85b293623d0"></a><!-- doxytag: member="CGameWorld::m_Map" ref="a4ac08d06f0bf5098f491f85b293623d0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d9e/struct_map_type.html">MapType</a> <a class="el" href="../../d4/dad/class_c_game_world.html#a4ac08d06f0bf5098f491f85b293623d0">CGameWorld::m_Map</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>地图 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1ab8f43d2457a9b7257c89e2c915f3eb"></a><!-- doxytag: member="CGameWorld::m_MapSeed" ref="a1ab8f43d2457a9b7257c89e2c915f3eb" args="[MAP_SEED_NUM]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d50/struct_map_seed_type.html">MapSeedType</a> <a class="el" href="../../d4/dad/class_c_game_world.html#a1ab8f43d2457a9b7257c89e2c915f3eb">CGameWorld::m_MapSeed</a>[MAP_SEED_NUM]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>地图种子 </p>
+
+</div>
+</div>
+<a class="anchor" id="a869cbd550dfe626d8442ce91d6bed8e2"></a><!-- doxytag: member="CGameWorld::m_nLastGUIID" ref="a869cbd550dfe626d8442ce91d6bed8e2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d4/dad/class_c_game_world.html#a869cbd550dfe626d8442ce91d6bed8e2">CGameWorld::m_nLastGUIID</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>最后按下的GUI的ID </p>
+
+</div>
+</div>
+<a class="anchor" id="a7c3817699f8222739d97b2dd6e822e4f"></a><!-- doxytag: member="CGameWorld::m_nSeedID" ref="a7c3817699f8222739d97b2dd6e822e4f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d4/dad/class_c_game_world.html#a7c3817699f8222739d97b2dd6e822e4f">CGameWorld::m_nSeedID</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>当前地图的种子ID </p>
+
+</div>
+</div>
+<a class="anchor" id="acd40b27a0662e68ac00ab3dd991b9204"></a><!-- doxytag: member="CGameWorld::m_nSelArr" ref="acd40b27a0662e68ac00ab3dd991b9204" args="[2]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d4/dad/class_c_game_world.html#acd40b27a0662e68ac00ab3dd991b9204">CGameWorld::m_nSelArr</a>[2]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>选中方块的ID(最多选中2个) </p>
+
+</div>
+</div>
+<a class="anchor" id="a2d2f9cd704537df313abaed58069f386"></a><!-- doxytag: member="CGameWorld::m_pCursor" ref="a2d2f9cd704537df313abaed58069f386" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hgeSprite* <a class="el" href="../../d4/dad/class_c_game_world.html#a2d2f9cd704537df313abaed58069f386">CGameWorld::m_pCursor</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>HGE鼠标精灵. </p>
+
+</div>
+</div>
+<a class="anchor" id="a404b7f9fec7587f8deed5b3d465b8174"></a><!-- doxytag: member="CGameWorld::m_pElemButtonArr" ref="a404b7f9fec7587f8deed5b3d465b8174" args="[300]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/dc5/class_c_elem_button.html">CElemButton</a>* <a class="el" href="../../d4/dad/class_c_game_world.html#a404b7f9fec7587f8deed5b3d465b8174">CGameWorld::m_pElemButtonArr</a>[300]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>方块GUI数组 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3648559ecd38ffc58ca7864dfda78dad"></a><!-- doxytag: member="CGameWorld::m_pElement" ref="a3648559ecd38ffc58ca7864dfda78dad" args="[MAX_ELEM_TEXTURE *4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hgeSprite* <a class="el" href="../../d4/dad/class_c_game_world.html#a3648559ecd38ffc58ca7864dfda78dad">CGameWorld::m_pElement</a>[MAX_ELEM_TEXTURE *4]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>HGE方块精灵数组. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae869931782d9c189daad5bec2c979916"></a><!-- doxytag: member="CGameWorld::m_pElemSel" ref="ae869931782d9c189daad5bec2c979916" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hgeSprite* <a class="el" href="../../d4/dad/class_c_game_world.html#ae869931782d9c189daad5bec2c979916">CGameWorld::m_pElemSel</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>HGE选中效果精灵. </p>
+
+</div>
+</div>
+<a class="anchor" id="acae38f0edd84d5d09cda11631aacabb1"></a><!-- doxytag: member="CGameWorld::m_pMapSearch" ref="acae38f0edd84d5d09cda11631aacabb1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d29/class_c_map_search.html">CMapSearch</a>* <a class="el" href="../../d4/dad/class_c_game_world.html#acae38f0edd84d5d09cda11631aacabb1">CGameWorld::m_pMapSearch</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>地图搜索类的实例 </p>
+
+</div>
+</div>
+<a class="anchor" id="a263ec19f9e9aba86e9a4cbdc3e4a1384"></a><!-- doxytag: member="CGameWorld::m_pTimeBar" ref="a263ec19f9e9aba86e9a4cbdc3e4a1384" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hgeSprite* <a class="el" href="../../d4/dad/class_c_game_world.html#a263ec19f9e9aba86e9a4cbdc3e4a1384">CGameWorld::m_pTimeBar</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>HGE时间轴精灵. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae9cafcff3e0e35f8b6f698d2bc021f85"></a><!-- doxytag: member="CGameWorld::m_ResortTexture" ref="ae9cafcff3e0e35f8b6f698d2bc021f85" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTEXTURE <a class="el" href="../../d4/dad/class_c_game_world.html#ae9cafcff3e0e35f8b6f698d2bc021f85">CGameWorld::m_ResortTexture</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>重排道具纹理 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa45953c5278bf103385c722d7b832c25"></a><!-- doxytag: member="CGameWorld::m_thisTime" ref="aa45953c5278bf103385c722d7b832c25" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="../../d4/dad/class_c_game_world.html#aa45953c5278bf103385c722d7b832c25">CGameWorld::m_thisTime</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>这一次的计时 </p>
+
+</div>
+</div>
+<a class="anchor" id="add87006b749e2b2d30af045712fd7f5b"></a><!-- doxytag: member="CGameWorld::m_ThunderAni" ref="add87006b749e2b2d30af045712fd7f5b" args="[6]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hgeAnimation* <a class="el" href="../../d4/dad/class_c_game_world.html#add87006b749e2b2d30af045712fd7f5b">CGameWorld::m_ThunderAni</a>[6]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>闪电动画精灵 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1ba5be44ca29a7ceb4297d1462b00ebf"></a><!-- doxytag: member="CGameWorld::m_TimeBarTexture" ref="a1ba5be44ca29a7ceb4297d1462b00ebf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTEXTURE <a class="el" href="../../d4/dad/class_c_game_world.html#a1ba5be44ca29a7ceb4297d1462b00ebf">CGameWorld::m_TimeBarTexture</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>时间轴纹理 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3d80121860a2b6a9dc0afc68caa03333"></a><!-- doxytag: member="CGameWorld::ResortSE" ref="a3d80121860a2b6a9dc0afc68caa03333" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HEFFECT <a class="el" href="../../d4/dad/class_c_game_world.html#a3d80121860a2b6a9dc0afc68caa03333">CGameWorld::ResortSE</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>重拍道具SE </p>
+
+</div>
+</div>
+<a class="anchor" id="a71cebce090f8a6081ccf3badf6c4092a"></a><!-- doxytag: member="CGameWorld::StartBtnTexture" ref="a71cebce090f8a6081ccf3badf6c4092a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTEXTURE <a class="el" href="../../d4/dad/class_c_game_world.html#a71cebce090f8a6081ccf3badf6c4092a">CGameWorld::StartBtnTexture</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>开始按钮纹理 </p>
+
+</div>
+</div>
+<a class="anchor" id="a040b5c8dc37ee957aa52e8acca696309"></a><!-- doxytag: member="CGameWorld::StartSE" ref="a040b5c8dc37ee957aa52e8acca696309" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HEFFECT <a class="el" href="../../d4/dad/class_c_game_world.html#a040b5c8dc37ee957aa52e8acca696309">CGameWorld::StartSE</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>开始按钮SE </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li>F:/VC2008 Proj/LinkMe/<a class="el" href="../../d5/d58/_game_world_8h_source.html">GameWorld.h</a></li>
+<li>F:/VC2008 Proj/LinkMe/<a class="el" href="../../db/d7a/_game_world_8cpp.html">GameWorld.cpp</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Generated at Fri Oct 8 2010 01:16:15 for 死月连连看 by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

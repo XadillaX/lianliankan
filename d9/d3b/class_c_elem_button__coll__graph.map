@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$d4/dad/class_c_game_world.html" title="游戏类" alt="" coords="215,309,314,339"/>
+<area shape="rect" id="node5" href="$dc/d9e/struct_map_type.html" title="地图类型" alt="" coords="218,213,292,243"/>
+<area shape="rect" id="node7" href="$db/d29/class_c_map_search.html" title="地图搜索类" alt="" coords="316,213,412,243"/>
+<area shape="rect" id="node9" href="$d9/de3/struct_coor_type.html" title="地图坐标结构体" alt="" coords="316,5,394,35"/>
+<area shape="rect" id="node11" href="$df/d9c/struct_point_path.html" title="路线结构体" alt="" coords="364,101,442,131"/>
+<area shape="rect" id="node14" href="$d9/d50/struct_map_seed_type.html" title="地图种子类型" alt="" coords="436,213,540,243"/>
+</map>
