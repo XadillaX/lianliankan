@@ -1,6 +1,8 @@
 # 连连看
 
 > 年幼无知之作，码于 2010 年 10 月初学 HGE 游戏引擎之时，为 QQ 游戏连连看的单机复刻版。其中资源版权所属为 QQ 游戏，资源仅供学习使用，不能用于商业用途。
+>
+> 原来我以前也是写过 C++ 的啊。(ゝ∀･)⌒☆
 
 有一个由 [Doxygen](http://www.stack.nl/~dimitri/doxygen/) 生成的文档，在该仓库的 `gh-pages` 分支，可于 [此处](http://blog.xcoder.in/lianliankan/) 访问。
 
