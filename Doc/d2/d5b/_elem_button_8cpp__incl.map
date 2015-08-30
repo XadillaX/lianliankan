@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d4/dad/_elem_button_8h.html" title="方块GUI类文件" alt="" coords="61,160,163,189"/>
-<area shape="rect" id="node11" href="$d5/d58/_game_world_8h.html" title="连连看游戏主类文件" alt="" coords="200,83,301,112"/>
-<area shape="rect" id="node17" href="$df/df6/_tiny_button_8h.html" title="普通GUI按钮类文件" alt="" coords="387,160,480,189"/>
-<area shape="rect" id="node22" href="$db/df4/_map_search_8h.html" title="地图搜索逻辑文件" alt="" coords="504,160,603,189"/>
-</map>

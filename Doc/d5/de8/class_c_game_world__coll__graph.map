@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$de/dc5/class_c_elem_button.html" title="方块GUI类" alt="" coords="103,405,201,435"/>
-<area shape="rect" id="node5" href="$dc/d9e/struct_map_type.html" title="地图类型" alt="" coords="5,213,80,243"/>
-<area shape="rect" id="node7" href="$db/d29/class_c_map_search.html" title="地图搜索类" alt="" coords="104,213,200,243"/>
-<area shape="rect" id="node9" href="$d9/de3/struct_coor_type.html" title="地图坐标结构体" alt="" coords="104,5,181,35"/>
-<area shape="rect" id="node11" href="$df/d9c/struct_point_path.html" title="路线结构体" alt="" coords="152,101,229,131"/>
-<area shape="rect" id="node14" href="$d9/d50/struct_map_seed_type.html" title="地图种子类型" alt="" coords="224,213,328,243"/>
-</map>
